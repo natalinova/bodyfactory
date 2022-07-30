@@ -1,0 +1,19 @@
+.contact_us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.contact_us_image {
+    border-radius: 10px;
+        box-shadow: 0px 0px 70px -50px rgba(0, 0, 0, 0.4);
+}
+.contact_us_button {
+    margin-left: 200px;
+    width: 200px;
+    height:60px;
+    border-radius: 15px;
+    background-color: var(--dark-green);
+    color: var(--light-grey);
+    box-shadow: 0px 0px 70px -50px rgba(0, 0, 0, 0.4);
+}

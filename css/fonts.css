@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff'),
+        url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+      font-family: 'Gilroy';
+      src: local('Gilroy Ultra Light'), local('Gilroy-Ultra-Light'),
+          url('../fonts/Gilroy-UltraLight.woff2') format('woff2'),
+          url('../fonts/Gilroy-UltraLight.woff') format('woff'),
+          url('../fonts/Gilroy-UltraLight.ttf') format('truetype');
+      font-weight: 200;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Gilroy';
+      src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
+          url('../fonts/Gilroy-Extrabold.woff2') format('woff2'),
+          url('../fonts/Gilroy-Extrabold.woff') format('woff'),
+          url('../fonts/Gilroy-Extrabold.ttf') format('truetype');
+      font-weight: 800;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Gilroy';
+      src: local('Gilroy Medium'), local('Gilroy-Medium'),
+          url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+          url('../fonts/Gilroy-Medium.woff') format('woff'),
+          url('../fonts/Gilroy-Medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Halymon';
+      src: local('Halymon'), local('Halymon'),
+          url('../fonts/HalymonRegular-ywyJZ.ttf') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+  }

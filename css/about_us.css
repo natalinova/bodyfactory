@@ -1,0 +1,240 @@
+.about_us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .round {
+    padding: auto;
+    display: flex;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--light-grey);
+        color: white;
+        justify-content: center;
+        align-items: center;
+        
+} */
+/* .about_us_symbol{
+    padding: auto;
+    align-items: center;
+    vertical-align:baseline;
+} */
+.about_us_block {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: var(--shadow);
+
+}
+.about_us_text{
+   
+    margin-right: 50px;
+    width: 100%;
+    
+}
+.about_us_block--left {
+margin-left: 50px;
+}
+
+.about_us_block--right {
+    margin-right: 50px;
+}
+.about_us_item{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    
+}
+.about_us_image{
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.about_us_line {
+    margin-left: 100px;
+    width: 1100px;
+    height: 3px;
+    border-bottom: 1px solid var(--light-grey);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}   
+
+/* стрілка */
+.about_us_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+ul li {
+    margin: 0 0 24px;
+}
+
+.the-arrow {
+    width: 1px;
+    transition: all 0.2s;
+}
+
+.the-arrow.-left {
+    position: absolute;
+    top: 60%;
+    left: 0;
+}
+
+.the-arrow.-left>.shaft {
+    width: 0;
+    background-color: var(--dark-gray);
+}
+
+.the-arrow.-left>.shaft:before,
+.the-arrow.-left>.shaft:after {
+    width: 0;
+    background-color: var(--dark-gray);
+}
+
+.the-arrow.-left>.shaft:before {
+    transform: rotate(0);
+}
+
+.the-arrow.-left>.shaft:after {
+    transform: rotate(0);
+}
+
+.the-arrow.-right {
+    top: 3px;
+}
+
+.the-arrow.-right>.shaft {
+    width: 1px;
+    transition-delay: 0.2s;
+}
+
+.the-arrow.-right>.shaft:before,
+.the-arrow.-right>.shaft:after {
+    width: 8px;
+    transition-delay: 0.3s;
+    transition: all 0.5s;
+}
+
+.the-arrow.-right>.shaft:before {
+    transform: rotate(40deg);
+}
+
+.the-arrow.-right>.shaft:after {
+    transform: rotate(-40deg);
+}
+
+.the-arrow>.shaft {
+    background-color: var(--dark-gray);
+    display: block;
+    height: 1px;
+    position: relative;
+    transition: all 0.2s;
+    transition-delay: 0;
+    will-change: transform;
+}
+
+.the-arrow>.shaft:before,
+.the-arrow>.shaft:after {
+    background-color: var(--dark-gray);
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.2s;
+    transition-delay: 0;
+}
+
+.the-arrow>.shaft:before {
+    transform-origin: top right;
+}
+
+.the-arrow>.shaft:after {
+    transform-origin: bottom right;
+}
+
+.animated-arrow {
+    display: inline-block;
+    color: var(--dark-gray);
+    font-size: 16px;
+    font-style:italic;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.animated-arrow:hover {
+    color: #808080;
+}
+
+.animated-arrow:hover>.the-arrow.-left>.shaft {
+    width: 64px;
+    transition-delay: 0.1s;
+    background-color: var(--light-grey);
+}
+
+.animated-arrow:hover>.the-arrow.-left>.shaft:before,
+.animated-arrow:hover>.the-arrow.-left>.shaft:after {
+    width: 8px;
+    transition-delay: 0.1s;
+    background-color: var(--light-grey);
+}
+
+.animated-arrow:hover>.the-arrow.-left>.shaft:before {
+    transform: rotate(40deg);
+}
+
+.animated-arrow:hover>.the-arrow.-left>.shaft:after {
+    transform: rotate(-40deg);
+}
+
+.animated-arrow:hover>.about_us_main {
+    transform: translateX(17px);
+    transform: translateX(80px);
+}
+
+.animated-arrow:hover>.about_us_main>.the-arrow.-right>.shaft {
+    width: 0;
+    transform: translateX(200%);
+    transition-delay: 0;
+}
+
+.animated-arrow:hover>.about_us_main>.the-arrow.-right>.shaft:before,
+.animated-arrow:hover>.about_us_main>.the-arrow.-right>.shaft:after {
+    width: 0;
+    transition-delay: 0;
+    transition: all 0.1s;
+}
+
+.animated-arrow:hover>.about_us_main>.the-arrow.-right>.shaft:before {
+    transform: rotate(0);
+}
+
+.animated-arrow:hover>.about_us_main>.the-arrow.-right>.shaft:after {
+    transform: rotate(0);
+}
+
+.animated-arrow>.about_us_main {
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.animated-arrow>.about_us_main>.text {
+    margin: 0 16px 0 0;
+    line-height: 1;
+}
+
+.animated-arrow>.about_us_main>.the-arrow {
+    position: relative;
+}
