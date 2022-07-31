@@ -1,26 +1,65 @@
 .hero {display: flex;
-margin-top: 120px;
+    flex-direction: column;
+/* margin-top: 120px; */
 justify-content: center;
 margin-bottom: 50px;}
 
 .hero_image {
     margin-left: 10px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 10px;
+    object-fit: cover;
+    /* border-radius: 10px; */
 }
 .hero_image--first{
-    margin-top: 140px;
+    margin-top: 115px;
 }
 .hero_image--second {
-    margin-top: -40px;
+    margin-top: -42px;
 } 
 .hero_image--third{
-    margin-top: 40px;
+    margin-top: 0;
+}
+.hero_image--four {
+    margin-top: -25px;
 }
  .hero_image:hover, .hero_image:focus{
     transform: scale(1.1);
  }
-
+.hero_all_image{
+    display: flex;
+    margin-left: 210px;
+}
+h1{padding-top: 30px;
+    font-size: 35px;
+    text-align: center;
+    color: var(--dark-green);
+    padding-bottom: 45px;
+    margin: 0;
+}
+.hero_text{
+    
+    text-align: center;
+    line-height: 15px;
+    font-size: 10px;
+    
+    padding-bottom: 30px;
+    
+}
+.hero_text_block{
+margin-left: auto;
+margin-right: auto;
+width: 560px;
+}
+.hero_link {
+    margin-bottom: 95px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero_anchor {
+    color: var(--dark-green);
+    font-size: 10px;
+}
  /* додатковий блок*/
  .additional  {
     display: flex;

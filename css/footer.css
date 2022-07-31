@@ -1,10 +1,13 @@
 .footer{
-    display: block;
-    align-items: center;
+    display: flex;
+    align-items: baseline;
     
     
 }
 .footer_block{
+    margin-top: 35px;
+    margin-left: 280px;
+    width: 880px;
     display: flex;
     margin-bottom: 30px;
     justify-content: space-evenly;
@@ -25,11 +28,13 @@
 }
 
 .contacts_references {
-    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .contacts_references_link {
     color: var(--dark-grey);
+    font-size: 10px;
 }
 
 .contacts_references_link:hover,
@@ -39,6 +44,7 @@
 
 .contacts_adress_item {
     color: var(--dark-grey);
+    font-size: 10px;
 }
 
 .contacts_adress_item:hover,
@@ -47,15 +53,21 @@
 }
 
 .contacts_title {
-    padding-left: 33px;
-    font-style: italic;
+    font-size: 10px;
+    /* padding-left: 33px; */
+    /* font-style: italic; */
     color: var(--dark-green)
 }
 .contacts_socials{
     display: flex;
+    flex-direction: column;
     margin-left: 33px;
 }
 .footer_copyright {
     display: flex;
-justify-content: flex-end;
-margin-right: 200px;}
+justify-content: flex-start;
+}
+
+.footer_copyright > p{
+    font-size: 10px;
+}

@@ -26,16 +26,17 @@
 
 <body>
     <header class="head">
-        <div class="header_logo_menu">
+        <!-- <div class="header_logo_menu"> -->
 <div class="logo">
     Logo
 </div>
+<div class="header_menu_burger"> 
 <div class="navbar">
-    <a href="#home">Головна</a>
+    <a href="#home">ГОЛОВНА</a>
 
     <div class="dropdown">
-        <button class="dropbtn"> Наші послуги
-            <!-- <i class="fa fa-caret-down"></i> -->
+        <button class="dropbtn"> НАШІ ПОСЛУГИ
+            <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content" id="myDropdown">
             <a href="#">Корекція фігури</a>
@@ -44,14 +45,12 @@
             <a href="#">Релаксуючий масаж</a>
         </div>
     </div>
-    <a href="#news">Прайс</a>
-    <a href="#news">Контакти</a>
+    <a href="#news">ПРАЙС</a>
+    <a href="#news">КОНТАКТИ</a>
 </div>
 
-    
-
-   </div>
-<div>
+<!-- </div> -->
+<!-- <div>
     <ul class="socials">
         <li class="socials__item"><a class="socials__link socials__link--dark" href=""> <svg class="socials__icon">
                     <use href="./images/icons.svg#instagram"></use>
@@ -63,32 +62,66 @@
                 </svg></a></li>
 
     </ul>
+</div> -->
+<div class="header_burger">
+    <button class="menu"
+        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+        aria-label="Main Menu">
+        <svg width="40" height="40" viewBox="0 0 100 100">
+            <path class="line line1"
+                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3"
+                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+        </svg>
+    </button>
 </div>
-   
+</div>
+
     </header>
-    <div class="line_bold"></div>
+    
 <section class="hero">
-<div > <img class="hero_image hero_image--first" src="./images/bf1.jpg" alt="" width="250px"> </div>
-<div > <img class="hero_image hero_image--second" src="./images/bf2.jpg" alt="" width="300px"> </div>
-<div > <img class="hero_image hero_image--third" src="./images/bf3.jpg" alt="" width="300px"> </div>
-<div > <img class="hero_image hero_image--four" src="./images/bf5.jpg" alt="" width="200px"> </div>
+    <h1>Lorem ipsum dolor sit amet,<br> consectetur</h1>
+    <div class="hero_text_block">
+<p class="hero_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, quaerat dolores animi,perferendis
+    nesciunt at ea, dolorem minus tempore necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Molestias voluptatibus totam nam obcaecati doloremque voluptates a suscipit, dolor in culpa eveniet provident saepe
+    modi. </p>
+    </div>
+    
+    <div class="hero_link">
+        <a  class="hero_anchor" href="#about_us">ПЕРЕГЛЯНУТИ НАШІ ПРОЦЕДУРИ &#8594</a> </div>
+    
+    <div class="hero_all_image">
+        <div> <img class="hero_image hero_image--first" src="./images/bf1_opt.jpg" alt="" width="250px" height="400px"> </div>
+        <div> <img class="hero_image hero_image--second" src="./images/bf2_opt.jpg" alt="" width="300px" height="510px"> </div>
+        <div> <img class="hero_image hero_image--third" src="./images/bf3_opt.jpg" alt="" width="290px" height="510px"> </div>
+        <div> <img class="hero_image hero_image--four" src="./images/bf5_opt.jpg" alt="" width="215px" height="380px"> </div> </div>
+
 
 </section>
-<div class="line_bold"></div>
+<!-- <div class="line_bold"></div> -->
 <!-- <section class="additional"> 
     <img class = "additional_image" src="./images/call_us.webp" alt="">
     <p class="additional_text">Your relax is our pleasure</p>
 </section>
 <div class="line_bold"></div> -->
-<section class="about_us">
+<section class="about_us" id="about_us">
+    <h2 class="about_us_bigtitle">Наші послуги</h2>
+    <div class="about_us_line">
+    
+    </div>
     <div class="about_us_item">
-        <h2 class="about_us_title">Естетика</h2>
-        <div class="about_us_block about_us_block--left">
-            <p class="about_us_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit debitis nemo
-            provident, atque voluptas id recusandae, facere libero laboriosam eligendi dolor accusantium ducimus veritatis
-            officiis eius tenetur quo cumque?</p>
-            
-         </div>
+        <div class="about_us_block_small">  
+<h3 class="about_us_title">Естетика</h3>
+<div class="about_us_block about_us_block--left">
+    <p class="about_us_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit debitis nemo
+        provident, atque voluptas id recusandae, facere libero laboriosam eligendi dolor accusantium ducimus veritatis
+        officiis eius tenetur quo cumque?</p>
+
+</div>
+        </div>
+        
 
         <div class='about_us_container'>
             <ul>
@@ -116,13 +149,17 @@
     
     </div>
 <div class="about_us_item">
-    <h2 class="about_us_title"> Корекція</h2>
-        <div class="about_us_block about_us_block--left">
+    <div class="about_us_block_small">
+<h3 class="about_us_title"> Корекція</h3>
+<div class="about_us_block about_us_block--left">
     <p class="about_us_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit debitis nemo
-    provident, atque voluptas id recusandae, facere libero laboriosam eligendi dolor accusantium ducimus veritatis
-    officiis eius tenetur quo cumque?</p>
+        provident, atque voluptas id recusandae, facere libero laboriosam eligendi dolor accusantium ducimus veritatis
+        officiis eius tenetur quo cumque?</p>
+
+</div>
+
+    </div>
     
-        </div>
        
 <div class='about_us_container'>
     <ul>
@@ -149,14 +186,18 @@
     
 </div>
 <div class="about_us_item">
-<h2 class="about_us_title"> Лікування</h2>
+    <div class="about_us_block_small">
+
+<h3 class="about_us_title"> Лікування</h3>
 <div class="about_us_block about_us_block--left">
-  
-<p class="about_us_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit debitis nemo
-    provident, atque voluptas id recusandae, facere libero laboriosam eligendi dolor accusantium ducimus veritatis
-    officiis eius tenetur quo cumque?</p>
+
+    <p class="about_us_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit debitis nemo
+        provident, atque voluptas id recusandae, facere libero laboriosam eligendi dolor accusantium ducimus veritatis
+        officiis eius tenetur quo cumque?</p>
 
 </div>
+    </div>
+
     
 <div class='about_us_container'>
     <ul>
@@ -182,13 +223,16 @@
 
 </div>
 <div class="about_us_item">
-    <h2 class="about_us_title">Релакс </h2>
-    <div class="about_us_block about_us_block--left">
-<p class="about_us_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit debitis nemo
-    provident, atque voluptas id recusandae, facere libero laboriosam eligendi dolor accusantium ducimus veritatis
-    officiis eius tenetur quo cumque?</p>
+    <div class="about_us_block_small">
+<h3 class="about_us_title">Релакс </h3>
+<div class="about_us_block about_us_block--left">
+    <p class="about_us_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit debitis nemo
+        provident, atque voluptas id recusandae, facere libero laboriosam eligendi dolor accusantium ducimus veritatis
+        officiis eius tenetur quo cumque?</p>
 
+</div>
     </div>
+    
     
 <div class='about_us_container'>
     <ul>
@@ -218,14 +262,17 @@
 
 </section>
 <section class="contact_us">
-<img class="contact_us_image" src="./images/call_us.webp" alt="Contact us, please!"  >
+    <div class="contact_us_block">
+<img class="contact_us_image" src="./images/call_us.webp" alt="Contact us, please!">
 <button class="contact_us_button" type="button"> Записатись на візит</button>
+    </div>
+
 
 </section>
-<div class="line_bold">
+<!-- <div class="line_bold">
 
-</div>
-    <footer class="footer">
+</div> -->
+    <div class="footer">
         <!-- <div class="footer_block">
         <div class="footer_maps">
             <iframe
@@ -235,26 +282,33 @@
         </div>
 
 <div>  -->
+    <div class="footer_block">
     <div class="contacts_references">
+        <h3 class="contacts_title"> НAШІ ПОСЛУГИ</h3>
         <ul>
             <li> <a class="contacts_references_link" href=""> Корекція фігури</a></li>
             <li><a class="contacts_references_link" href="">Естетика тіла та обличчя</a></li>
             <li><a class="contacts_references_link" href="">Лікувальний та оздоровчий масаж</a></li>
             <li><a class="contacts_references_link" href="">Релаксуючий масаж</a></li>
         </ul>
-    </div class="contacts_block">
-    <div class="contacts_line">
+        <div class="footer_copyright">
+            <p>BodyFactory &#169 2020</p>
+        </div>
     </div>
+    <!-- </div class="contacts_block"> -->
+    <!-- <div class="contacts_line">
+    </div> -->
     <div class="contacts">
-        <h3 class="contacts_title"> Наша адреса</h3>
+        <h3 class="contacts_title"> НАША АДРЕСА</h3>
         <ul class="contacts_adress">
             <li><a class="contacts_adress_item" href="https://goo.gl/maps/FwnA2U8h5pGoPJsg6" target="_blank"
                     rel="noreferrer noopener">м. Львів, вул. Князя Святослава, 5 </a></li>
             <li> <a class="contacts_adress_item" href="tel:+380991111111">+38 099 111 11 11</a>
             </li>
         </ul>
+    </div>
         <div class="contacts_socials">
-            <p>Ми в соцмережах:</p>
+            <h3 class="contacts_title">МИ В СОЦМЕРЕЖАХ:</h3>
             <ul class="socials">
                 <li class="socials__item"><a class="socials__link socials__link--dark" href=""> <svg class="socials__icon">
                             <use href="./images/icons.svg#instagram"></use>
@@ -268,21 +322,18 @@
             </ul>
         </div>
     
-    </div>
+
     
-</div>
+<!-- </div> -->
 
 
-</div>
 <!-- </div> -->
 </div>
-
-
-    <div class="about_us_line">
-    </div>
-    <div class="footer_copyright">
-        <p>Copyright &#169</p>
-    </div>
+</div>
+</footer>
+    <!-- <div class="about_us_line">
+    </div> -->
+   
 
     </footer>
 </body>

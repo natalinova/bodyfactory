@@ -2,11 +2,16 @@
     width: 40px;
     height: 40px;
     background-color: var(--dark-green);
+
+}
+.header_menu_burger{
+    display: flex;
+    align-items: center;
 }
 .head{
     
-    margin: 30px 60px;
-    width: 1250px;
+    margin-left: 280px;
+    width: 880px;
     display: flex;
     justify-content: space-between;
     
@@ -16,9 +21,10 @@
     justify-content: space-around;
 }
 .navbar {
-    margin-left: 30px;
-    vertical-align: baseline;
-    height: 70px;
+    display: flex;
+    margin-top: 10px;
+    vertical-align: center;
+    /* height: 70px; */
     overflow: hidden;
     font-family: "Gilroy";
     
@@ -26,7 +32,8 @@
 
 .navbar a {
     float: left;
-    font-size: 20px;
+    font-size: 10px;
+    font-weight: 700;
     color: var(--dark-green);
     text-align: center;
     padding: 14px 16px;
@@ -40,7 +47,8 @@
 
 .dropdown .dropbtn {
     cursor: pointer;
-    font-size: 20px;
+    font-size: 10px;
+    font-weight: 700;
     border: none;
     outline: none;
     color: var(--light-grey);
@@ -142,4 +150,61 @@ color: var(--light-grey);
 }
 li {
     list-style: none;
+}
+/*стилі бургера*/
+.header_burger{
+
+    /* width: 20px;
+    height: 20px; */
+    margin-top: 5px;
+    align-items: center;
+    /* margin-top: 10px; */
+}
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+}
+
+.line {
+    fill: none;
+    stroke: var(--dark-green);
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+}
+
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
 }
