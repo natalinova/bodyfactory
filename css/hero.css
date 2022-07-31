@@ -9,11 +9,13 @@ margin-bottom: 50px;}
     border-radius: 10px;
 }
 .hero_image--first{
-    margin-top: -40px;
+    margin-top: 140px;
 }
-
+.hero_image--second {
+    margin-top: -40px;
+} 
 .hero_image--third{
-    margin-top: -70px;
+    margin-top: 40px;
 }
  .hero_image:hover, .hero_image:focus{
     transform: scale(1.1);

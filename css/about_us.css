@@ -51,11 +51,16 @@ margin-left: 50px;
     margin-bottom: 20px;
     
 }
-.about_us_image{
+/* .about_us_image{
     border-radius: 10px;
     box-shadow: var(--shadow);
-}
+} */
 
+.about_us_title{
+    width: 15%;
+    font-style: italic;
+    font-weight:500;
+}
 .about_us_line {
     margin-left: 100px;
     width: 1100px;

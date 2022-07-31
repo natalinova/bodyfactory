@@ -10,6 +10,7 @@
 body {
     font-family: 'Gilroy';
     color: var(--dark-grey);
+    background-color: RGBA(107, 135, 8, 0.11);
 }
 
 a{
@@ -18,7 +19,7 @@ a{
 
 .line_bold {
 margin-left: 50px;
-    width: 1200px;
+    width: 1250px;
     height: 3px;
     border-bottom: 2px solid var(--dark-green);
     margin-bottom: 30px;
