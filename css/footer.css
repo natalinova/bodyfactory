@@ -1,13 +1,15 @@
 .footer{
     display: flex;
+    width: 800px;
+    justify-content: space-between;
     align-items: baseline;
+    margin-left: 250px;
+    margin-top: 40px;
     
     
 }
 .footer_block{
     margin-top: 35px;
-    margin-left: 280px;
-    width: 880px;
     display: flex;
     margin-bottom: 30px;
     justify-content: space-evenly;
@@ -29,10 +31,14 @@
 
 .contacts_references {
     display: flex;
+    padding-left: 65px;
     flex-direction: column;
 }
-
+.footer_reference{
+height: 24px;
+}
 .contacts_references_link {
+    
     color: var(--dark-grey);
     font-size: 10px;
 }
@@ -54,8 +60,6 @@
 
 .contacts_title {
     font-size: 10px;
-    /* padding-left: 33px; */
-    /* font-style: italic; */
     color: var(--dark-green)
 }
 .contacts_socials{
@@ -64,6 +68,7 @@
     margin-left: 33px;
 }
 .footer_copyright {
+    margin: 43px 0;
     display: flex;
 justify-content: flex-start;
 }

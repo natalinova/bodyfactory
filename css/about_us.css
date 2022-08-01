@@ -1,28 +1,19 @@
 .about_us{
     display: flex;
+    margin-left: 250px;
+    padding-top: 60px;
     flex-direction: column;
     justify-content: center;
 }
 
-/* .round {
-    padding: auto;
-    display: flex;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: var(--light-grey);
-        color: white;
-        justify-content: center;
-        align-items: center;
-        
-} */
+
 /* .about_us_symbol{
     padding: auto;
     align-items: center;
     vertical-align:baseline;
 } */
 .about_us_block {
-    width: 45%;
+    width: 380px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,6 +23,7 @@
 .about_us_text{
     width: 410px;
 font-size: 12px;
+line-height: 17px;
     /* margin-right: 50px; */
     width: 100%;
     
@@ -40,18 +32,14 @@ font-size: 12px;
 margin-left: 50px;
 } */
 
-.about_us_block--right {
-    margin-right: 50px;
-}
 .about_us_item{
     width: 880px;
-    height: 100px;
+    height: 88px;
     display: flex;
     justify-content:space-between;
     align-items: center;
     /* padding-bottom: 10px; */
     /* margin-bottom: 20px; */
-    margin-left: 280px;
     
 }
 .about_us_block_small{
@@ -64,45 +52,47 @@ margin-left: 50px;
     box-shadow: var(--shadow);
 } */
 .about_us_bigtitle{
-    font-size: 30px;
-    margin-left: 280px;
+    font-size: 32px;
     font-style:normal;
-    margin-bottom: 55px;
-    font-weight:400;
+    margin-bottom: 40px;
+    font-weight:bolder;
 }
 .about_us_title{
 
-    width: 300px;
+    width: 265px;
     font-size: 18px;
     padding-left: 23px;
     font-style:normal;
-    font-weight:500;
+    font-weight:bolder;
 }
 .about_us_line {
-    margin-left: 100px;
-    
     width: 880px;
-    margin-left: 280px;
     height: 3px;
     border-bottom: 1px solid var(--light-grey);
     /* margin-bottom: 30px; */
     display: flex;
     justify-content: center;
-}   
-
+}  
+.about_us_arrow{
+    fill: var(--dark-gray);
+} 
+.about_us_arrow:hover, .about_us_arrow:focus{
+    fill: var(--light-grey);
+}
 /* стрілка */
 .about_us_container {
     display: flex;
-    align-items: flex-end;
-    justify-content: end;
+    align-items: center;
+    justify-content: center;
     height: 100%;
+    padding-right: 20px;
 }
 
-ul li {
+/* ul li {
     margin: 0 0 24px;
-}
+} */
 
-.the-arrow {
+/* .the-arrow {
     width: 1px;
     transition: all 0.2s;
 }
@@ -261,4 +251,4 @@ ul li {
 
 .animated-arrow>.about_us_main>.the-arrow {
     position: relative;
-}
+} */

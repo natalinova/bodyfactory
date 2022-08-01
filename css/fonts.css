@@ -42,3 +42,50 @@
       font-weight: 500;
       font-style: normal;
   }
+  @font-face {
+      font-family: 'Antario';
+      src: url('../fonts/Antario-Regular.eot');
+      src: local('Antario'), local('Antario-Regular'),
+          url('../fonts/Antario-Regular.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Antario-Regular.woff2') format('woff2'),
+          url('../fonts/Antario-Regular.woff') format('woff'),
+          url('../fonts/Antario-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Antario';
+      src: url('../fonts/Antario-Bold.eot');
+      src: local('Antario Bold'), local('Antario-Bold'),
+          url('../fonts/Antario-Bold.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Antario-Bold.woff2') format('woff2'),
+          url('../fonts/Antario-Bold.woff') format('woff'),
+          url('../fonts/Antario-Bold.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Antario';
+      src: url('../fonts/Antario-BoldItalic.eot');
+      src: local('Antario Bold Italic'), local('Antario-BoldItalic'),
+          url('../fonts/Antario-BoldItalic.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Antario-BoldItalic.woff2') format('woff2'),
+          url('../fonts/Antario-BoldItalic.woff') format('woff'),
+          url('../fonts/Antario-BoldItalic.ttf') format('truetype');
+      font-weight: bold;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: 'Antario';
+      src: url('../fonts/Antario-Italic.eot');
+      src: local('Antario Italic'), local('Antario-Italic'),
+          url('../fonts/Antario-Italic.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Antario-Italic.woff2') format('woff2'),
+          url('../fonts/Antario-Italic.woff') format('woff'),
+          url('../fonts/Antario-Italic.ttf') format('truetype');
+      font-weight: normal;
+      font-style: italic;
+  }

@@ -8,7 +8,7 @@
 --shadow:0px 0px 70px -50px rgba(0, 0, 0, 0.4)
 }
 body {
-    font-family: 'Gilroy';
+    font-family: 'Antario';
     color: var(--dark-grey);
     background-color: RGBA(107, 135, 8, 0.11);
 }
@@ -28,4 +28,11 @@ margin-left: 50px;
 }
 li, ul {
     padding-inline-start: 0;
+}
+
+section {
+    width: 800px;
+}
+ul{
+    margin: 0;
 }
