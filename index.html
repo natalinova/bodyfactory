@@ -8,8 +8,17 @@
     <title>BodyFactory</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&family=Comfortaa:wght@400;500;600;700&family=Montserrat+Alternates:wght@400;500;600;700&family=Tenor+Sans&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600&family=Montserrat+Alternates:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
@@ -21,198 +30,195 @@
     <link rel="stylesheet" href="./css/hero.css">
     <link rel="stylesheet" href="./css/contact_us.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
 
 <body>
-    <header class="head">
-        <!-- <div class="header_logo_menu"> -->
-<div class="logo">
-    Logo
-</div>
-<div class="header_menu_burger"> 
-<div class="navbar">
-    <a href="#home">ГОЛОВНА</a>
-
-    <div class="dropdown">
-        <button class="dropbtn"> НАШІ ПОСЛУГИ
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content" id="myDropdown">
-            <a href="#">Корекція фігури</a>
-            <a href="#">Естетика тіла та обличчя</a>
-            <a href="#">Лікувальний та оздоровчий масаж</a>
-            <a href="#">Релаксуючий масаж</a>
-        </div>
+  
+<header class="head">
+    <div class="logo">
+        <img class="logo_img" src="./images/IMG_2380.PNG" alt="" width="60" height="60">
     </div>
-    <a href="#news">ПРАЙС</a>
-    <a href="#news">КОНТАКТИ</a>
+    <div class="header_menu_burger">
+        <div class="navbar">
+            <a href="#home">ГОЛОВНА</a>
+
+            <div class="dropdown">
+                <button class="dropbtn"> НАШІ ПОСЛУГИ
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="#">Корекція фігури</a>
+                    <a href="#">Естетика тіла та обличчя</a>
+                    <a href="#">Лікувальний та оздоровчий масаж</a>
+                    <a href="#">Релаксуючий масаж</a>
+                </div>
+            </div>
+            <a href="#">ПРАЙС</a>
+            <a href="#news">КОНТАКТИ</a>
+        </div>
+        
+
+<div class="burger_menu">
+<input id="toggle" type="checkbox"></input>
+
+<label for="toggle" class="hamburger">
+    <div class="top-bun"></div>
+    <div class="meat"></div>
+    <div class="bottom-bun"></div>
+</label>
+
+<div class="nav">
+    <div class="nav-wrapper">
+        <nav>
+            <a href="#">Корекція фігури</a><br>
+            <a href="#">Естетика тіла та обличчя</a><br>
+            <a href="#">Лікувальний та оздоровчий масаж</a><br>
+            <a href="#">Релаксуючий масаж</a>
+        </nav>
+    </div>
+</div>
 </div>
 
-<!-- </div> -->
-<!-- <div>
-    <ul class="socials">
-        <li class="socials__item"><a class="socials__link socials__link--dark" href=""> <svg class="socials__icon">
-                    <use href="./images/icons.svg#instagram"></use>
-                </svg>
-            </a></li>
+           
+    </div>
 
-        <li class="socials__item"> <a class="socials__link socials__link--dark" href=""> <svg class="socials__icon">
-                    <use href="./images/icons.svg#facebook"></use>
-                </svg></a></li>
 
-    </ul>
-</div> -->
-<div class="header_burger">
-    <button class="menu"
-        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
-        aria-label="Main Menu">
-        <svg width="40" height="40" viewBox="0 0 100 100">
-            <path class="line line1"
-                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-            <path class="line line2" d="M 20,50 H 80" />
-            <path class="line line3"
-                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-        </svg>
-    </button>
+</header>
+
 </div>
-</div>
-
-    </header>
-    
+   
 <section class="hero">
-    <h1>Lorem ipsum dolor sit amet,<br> consectetur</h1>
+    <h1 class="font-title">Наш масаж змінить ваше життя назавжди </h1>
     <div class="hero_text_block">
 <p class="hero_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, quaerat dolores animi,perferendis
-    nesciunt at ea, dolorem minus tempore necessitatibus. Lorem ipsum dolor sit amet
+    nesciunt at ea, dolorem minus tempore necessitatibus. 
     modi. </p>
     </div>
+
+
     
     <div class="hero_link">
         <a  class="hero_anchor" href="#about_us">ПЕРЕГЛЯНУТИ НАШІ ПРОЦЕДУРИ &#8594</a> </div>
     
     <div class="hero_all_image">
-        <div> <img class="hero_image hero_image--first" src="./images/bf1_opt.jpg" alt="" width="190px" height="335px"> </div>
-        <div> <img class="hero_image hero_image--second" src="./images/bf2_opt.jpg" alt="" width="255px" height="460px"> </div>
-        <div> <img class="hero_image hero_image--third" src="./images/bf3_opt.jpg" alt="" width="255px" height="460px"> </div>
-        <div> <img class="hero_image hero_image--four" src="./images/bf5_opt.jpg" alt="" width="190px" height="335px"> </div> </div>
+        <div class="hero_image hero_image--first"> <img  src="./images/hero_no2.jpeg" alt="" > </div>
+        <div class="hero_image hero_image--second"> <img  src="./images/bf2_opt.jpg" alt="" > </div>
+        <div class="hero_image hero_image--third"> <img src="./images/version_2/hero_1.jpeg" alt="" > </div>
+        <div class="hero_image hero_image--four"> <img  src="./images/bf5_opt.jpg" alt="" > </div>
+     </div>
 
+<!-- <div class="hero_adaptive_text">
+    <p class="hero_text hero_text_add">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, quaerat dolores animi,perferendis
+        nesciunt at ea, dolorem minus tempore necessitatibus. Lorem ipsum dolor sit amet
+        modi. </p>
+        <button class="contact_us_button " type="button"> Записатись на візит</button>
+</div> -->
+</section>
 
-</section>
-<!-- <div class="line_bold"></div> -->
-<!-- <section class="additional"> 
-    <img class = "additional_image" src="./images/call_us.webp" alt="">
-    <p class="additional_text">Your relax is our pleasure</p>
-</section>
-<div class="line_bold"></div> -->
 <section class="about_us" id="about_us">
-    <h2 class="about_us_bigtitle">Наші послуги</h2>
+    <h2 class="about_us_bigtitle font-title">Наші послуги</h2>
     <div class="about_us_line">
     
     </div>
     <div class="about_us_item">
+        <div class="about_title_block">
+            <h3 class="about_us_title font-title">Естетика</h3>
+        </div>
+        
         <div class="about_us_block_small">  
-<h3 class="about_us_title">Естетика</h3>
-<div class="about_us_block about_us_block--left">
+
+<div class="about_us_block">
     <p class="about_us_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit debitis nemo
         provident, atque voluptas id recusandae, facere lib</p>
 
 </div>
+<div class='about_us_container'>
+    <svg class="about_us_arrow" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
+            data-name="3-Arrow Right" />
+    </svg>
+</div>
         </div>
         
 
-        <div class='about_us_container'>
-            <svg class="about_us_arrow" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                <path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
-                    data-name="3-Arrow Right" />
-            </svg>
-        </div>
-
-       
+        
     </div>
     <div class="about_us_line">
     
     </div>
 <div class="about_us_item">
+    <div class="about_title_block">
+<h3 class="about_us_title font-title"> Корекція</h3>
+    </div>
     <div class="about_us_block_small">
-<h3 class="about_us_title"> Корекція</h3>
-<div class="about_us_block about_us_block--left">
+
+<div class="about_us_block">
     <p class="about_us_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit debitis nemo
         provident, atque voluptas id recusandae, facere libero </p>
 
 </div>
-
-    </div>
-    
-       
 <div class='about_us_container'>
     <svg class="about_us_arrow" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
         <path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
             data-name="3-Arrow Right" />
     </svg>
 </div>
+    </div>
+        
+
 
 </div>
 <div class="about_us_line">
     
 </div>
 <div class="about_us_item">
+    <div class="about_title_block">
+<h3 class="about_us_title font-title"> Лікування</h3>
+    </div>
     <div class="about_us_block_small">
 
-<h3 class="about_us_title"> Лікування</h3>
-<div class="about_us_block about_us_block--left">
+
+<div class="about_us_block">
 
     <p class="about_us_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit debitis nemo
         provident, atque voluptas id recusandae, facere libero </p>
 
 </div>
-    </div>
-
-    
 <div class='about_us_container'>
     <svg class="about_us_arrow" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
         <path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
             data-name="3-Arrow Right" />
     </svg>
-    <!-- <ul>
-        <li>
-            <a class='animated-arrow' href='https://google.com'>
-                <span class='the-arrow -left'>
-                    <span class='shaft'></span>
-                </span>
-                <span class='about_us_main'>
-                    <span class='text'>
-                        Дізнатись більше
-                    </span>
-                    <span class='the-arrow -right'>
-                        <span class='shaft'></span>
-                    </span>
-                </span>
-            </a>
-        </li>
-    </ul> -->
 </div>
+    </div>
+
+    
+
 </div>
 <div class="about_us_line">
 
 </div>
 <div class="about_us_item">
+    <div class="about_title_block">
+<h3 class="about_us_title font-title">Релакс </h3>
+    </div>
     <div class="about_us_block_small">
-<h3 class="about_us_title">Релакс </h3>
-<div class="about_us_block about_us_block--left">
+
+<div class="about_us_block">
     <p class="about_us_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reprehenderit debitis nemo
         provident, atque voluptas id recusandae, facere libero </p>
 
 </div>
+<div class='about_us_container'>
+    <svg class="about_us_arrow" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
+            data-name="3-Arrow Right" />
+    </svg>
+</div>
     </div>
     
     
-<div class='about_us_container'>
-<svg class="about_us_arrow" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-    <path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
-        data-name="3-Arrow Right" />
-</svg>
-</div>
+
     
 
 </div>
@@ -220,81 +226,178 @@
 
 </div>
 
+</section>
+<section class="why_we">
+    <img class="why_we_image_second" src="./images/version_2/whywe.jpeg" alt="" width="245" height="435">
+<img class="why_we_image_first" src="./images/version_2/hero_7.jpeg" alt="" width="180" height="240">
+
+<div class="why_we_title">
+    <h3 class="font-title"> Лише якісна косметика</h3>
+</div>
+<div class="why_we_text">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, quia! Praesentium ut rem soluta beatae,nam ratione</p>
+</div>
+<div class="why_we_text">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, quia! Praesentium ut rem   , sapiente
+        nam ratione</p>
+</div>
+<a class="why_we_link" href="#about_us">ДИВИТИСЬ &#8594</a>
+</section>
+
+ <section class="onetwothree">
+    <div class="onetwothree_item">
+        <div class="onetwothree_number">
+            <p class="onetwothree_number--text font-title" >01</p>
+
+        </div>
+        <div class="onetwothree_title">
+            <h2 class="onetwothree_title--text font-title">Турбота про  кожного клієнта</h2>
+        </div>
+        <div class="onetwothree_text">
+            <p class="onetwothree_text--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum repellendus facilis distinctio,</p>
+        </div>
+        <div class="about_us_line why_we_line">
+        
+        </div>
+    </div>
+    <div class="onetwothree_item">
+        <div class="onetwothree_number">
+            <p class="onetwothree_number--text font-title">02</p>
+    
+        </div>
+        <div class="onetwothree_title">
+            <h2 class="onetwothree_title--text font-title">   Ексклюзивна косметика</h2>
+        </div>
+        <div class="onetwothree_text">
+            <p class="onetwothree_text--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum repellendus faci</p>
+        </div>
+        <div class="about_us_line why_we_line">
+        
+        </div>
+    </div>
+    <div class="onetwothree_item">
+        <div class="onetwothree_number ">
+            <p  class="onetwothree_number--text font-title">03</p>
+    
+        </div>
+        <div class="onetwothree_title">
+            <h2 class="onetwothree_title--text font-title">Високий рівень сервісу</h2>
+        </div>
+        <div class="onetwothree_text">
+            <p class="onetwothree_text--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. REt, quia! Praesentv i facilis distinctio,</p>
+        </div>
+        <div class="about_us_line why_we_line"></div>
+    </div>
 </section>
 <section class="contact_us">
-    <div class="contact_us_block">
-<img class="contact_us_image" src="./images/call_us.webp" alt="Contact us, please!">
-<button class="contact_us_button" type="button"> Записатись на візит</button>
-    </div>
+<div class="contacts_position">
+    <div class="contact_us_block contact_us_color">
+        <h2 class="contact_us_title font-title">
+            Завітайте до нас на масаж
+        </h2>
+        <p class="contact_us_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing consectetur, adipisicing elit. Et, quia! Praesentium ut rem
+            soluta beatae,nam c consequuntur laboriosam corrupti.
+        </p>
+        <div class="contact_list_price">
+    
+    
+            <div class="price_list_block">
+                <p class="contact_list_price_name">Lorem ipsum dolor sit ipsum dolo</p>
+                <p class="contact_list_price_number">500</p>
+            </div>
+    
+            <div class="short_line"></div>
+    
+            <div class="price_list_block">
+                <p class="contact_list_price_name">Lorem ipsum dolor sit ipsum dolo</p>
+                <p class="contact_list_price_number">500</p>
+            </div>
+    
+            <div class="short_line"></div>
+    
+            <div class="price_list_block">
+                <p class="contact_list_price_name">Lorem ipsum dolor sit ipsum dolo</p>
+                <p class="contact_list_price_number">500</p>
+            </div>
+    
+            <div class="short_line"></div>
+        </div>
+    
+        <button class="contact_us_button" type="button"> Призначити зустріч</button>
+</div>
+<!-- <img class="contact_us_image" src="./images/call_us.webp" alt="Contact us, please!"> -->
 
 
 </section>
-<!-- <div class="line_bold">
 
-</div> -->
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<footer>
+
+
     <div class="footer">
-        <!-- <div class="footer_block">
-        <div class="footer_maps">
-            <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572.9406927530895!2d24.005704915619294!3d49.84357187939634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add9dcb4c108b%3A0x4752ba10cb3454f!2z0L_Qu9C-0YnQsCDQmtC90Y_Qt9GPINCh0LLRj9GC0L7RgdC70LDQstCwLCA1LCDQm9GM0LLRltCyLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc5MDAw!5e0!3m2!1suk!2sua!4v1659181708232!5m2!1suk!2sua"
-    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-<div>  -->
-    <!-- <div class="footer_block"> -->
-    <div class="contacts_references">
-        <h3 class="contacts_title"> НAШІ ПОСЛУГИ</h3>
-        <ul>
-            <li class="footer_reference"> <a class="contacts_references_link" href=""> Корекція фігури</a></li>
-            <li class="footer_reference"><a class="contacts_references_link" href="">Естетика тіла та обличчя</a></li>
-            <li class="footer_reference"><a class="contacts_references_link" href="">Лікувальний та оздоровчий масаж</a></li>
-            <li class="footer_reference"><a class="contacts_references_link" href="">Релаксуючий масаж</a></li>
-        </ul>
-        <div class="footer_copyright">
-            <p>BodyFactory &#169 2020</p>
-        </div>
-    </div>
-    <!-- </div class="contacts_block"> -->
-    <!-- <div class="contacts_line">
-    </div> -->
+        
+            <div class="footer_about">
+                <div class="footer_logo_name">
+                    <div class="footer_logo">
+                        <img class="footer_logo_png" src="./images/IMG_2380.PNG" alt="">
+                    </div>
+                    <div>
+                        <h2 class="footer_name">BODYFACTORY</h2>
+                    </div>
+                </div>
+                <div class="footer_text_item">
+                    <p class="footer_text">Lorem ipsum dolor sit earumtempore nam odit optio adipisci ducimus   
+                        dolor</p>
+                </div>
+            
+            </div>
+            <div class="contacts_references">
+                <h3 class="contacts_title font-title"> НAШІ ПОСЛУГИ</h3>
+                <ul>
+                    <li class="footer_reference"> <a class="contacts_references_link" href=""> Корекція фігури</a></li>
+                    <li class="footer_reference"><a class="contacts_references_link" href="">Естетика тіла та обличчя</a></li>
+                    <li class="footer_reference"><a class="contacts_references_link" href="">Лікувальний масаж</a>
+                    </li>
+                    <li class="footer_reference"><a class="contacts_references_link" href="">Релаксуючий масаж</a></li>
+                </ul>
+            
+            </div>
+    
+        
     <div class="contacts">
-        <h3 class="contacts_title"> НАША АДРЕСА</h3>
+        <h3 class="contacts_title font-title"> НАША АДРЕСА</h3>
         <ul class="contacts_adress">
             <li class="footer_reference"><a class="contacts_adress_item" href="https://goo.gl/maps/FwnA2U8h5pGoPJsg6" target="_blank"
                     rel="noreferrer noopener">м. Львів, вул. Князя Святослава, 5 </a></li>
             <li class="footer_reference"> <a class="contacts_adress_item" href="tel:+380991111111">+38 099 111 11 11</a>
             </li>
         </ul>
-    </div>
         <div class="contacts_socials">
-            <h3 class="contacts_title">МИ В СОЦМЕРЕЖАХ:</h3>
+            <h3 class="contacts_title_soc font-title">МИ В СОЦМЕРЕЖАХ:</h3>
             <ul class="socials">
                 <li class="socials__item"><a class="socials__link socials__link--dark" href=""> <svg class="socials__icon">
                             <use href="./images/icons.svg#instagram"></use>
                         </svg>
                     </a></li>
-    
+        
                 <li class="socials__item"> <a class="socials__link socials__link--dark" href=""> <svg class="socials__icon">
                             <use href="./images/icons.svg#facebook"></use>
                         </svg></a></li>
-    
+        
             </ul>
         </div>
-    
-
-    
-<!-- </div> -->
-
-
-<!-- </div> -->
-<!-- </div> -->
+    </div>
+        
+</div>
+<div class="footer_copyright">
+    <p>BodyFactory &#169 2022</p>
 </div>
 </footer>
-    <!-- <div class="about_us_line">
-    </div> -->
-   
-
-    </footer>
+<script src="./js/scroll_button.js"></script>
+<script src="./js/menu_price.js"></script>
+<script src="./js/burger.js"></script>
 </body>
 </html>

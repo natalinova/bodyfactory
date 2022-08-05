@@ -36,11 +36,25 @@
       font-style: normal;
   }
   @font-face {
-      font-family: 'Halymon';
-      src: local('Halymon'), local('Halymon'),
-          url('../fonts/HalymonRegular-ywyJZ.ttf') format('woff2');
-      font-weight: 500;
-      font-style: normal;
+      font-family: 'GropledBold';
+      src: local('GropledBold'), local('GropledBold'),
+          url('../fonts/Gropled-Bold.otf') format('truetype');
+      font-weight: 700;
+      font-style: bold;
+  }
+  @font-face {
+      font-family: 'Plovdiv-Bold';
+      src: local('Plovdiv-Bold'), local('Plovdiv-Bold'),
+          url('../fonts/PlovdivDisplay-Bold.otf') format('truetype');
+      font-weight: 700;
+      font-style: bold;
+  }
+  @font-face {
+      font-family: 'DaysOne';
+      src: local('DaysOne'), local('DaysOne'),
+          url('../fonts/DaysOne-Regular.ttf') format('truetype');
+      font-weight: 700;
+      font-style: bold;
   }
   @font-face {
       font-family: 'Antario';
@@ -89,3 +103,60 @@
       font-weight: normal;
       font-style: italic;
   }
+  /*  директиви для шрифтів BF*/
+  @font-face {
+      font-family: 'Evolventa';
+      src: local('Evolventa-Bold'), local('Evolventa-Bold'),
+          url('../fonts/bf/Evolventa-Bold.ttf') format('truetype');
+      font-weight: 400;
+      font-style:normal;}
+
+          @font-face {
+              font-family: 'Evolventa';
+              src: local('Evolventa-BoldObligue'), local('Evolventa-BoldObligue'),
+                  url('../fonts/bf/Evolventa-BoldOblique.ttf') format('truetype');
+              font-weight: 400;
+              font-style: normal;
+          }
+                  @font-face {
+                      font-family: 'Evolventa';
+                      src: local('Evolventa-Oblique'), local('Evolventa-Oblique'),
+                          url('../fonts/bf/Evolventa-Oblique.ttf') format('truetype');
+                      font-weight: 400;
+                      font-style: normal;
+                  }
+
+                                  @font-face {
+                                      font-family: 'Evolventa';
+                                      src: local('Evolventa-Regular'), local('Evolventa-Regular'),
+                                          url('../fonts/bf/Evolventa-Regular.ttf') format('truetype');
+                                      font-weight: 400;
+                                      font-style: normal;
+                                  }
+    @font-face {
+            font-family: 'Hero-Light';
+            src: local('Hero-Light'), local('Hero-Light'),
+                url('../fonts/bf/Hero-Light.otf') format('truetype');
+            font-weight: 400;
+            font-style: normal;}
+
+            @font-face {
+                    font-family: 'PoiretOne-Regular';
+                    src: local('PoiretOne-Regular'), local('PoiretOne-Regular'),
+                        url('../fonts/bf/PoiretOne-Regular.ttf') format('truetype');
+                    font-weight: 400;
+                    font-style: normal;}
+
+                    @font-face {
+                            font-family: 'Intro';
+                            src: local('Intro'), local('Intro'),
+                                url('../fonts/bf/Intro.otf') format('truetype');
+                            font-weight: 400;
+                            font-style: normal;}
+@font-face {
+    font-family: 'Intro';
+    src: local('Intro-inline'), local('Intro-inline'),
+        url('../fonts/bf/Intro-Inline.otf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
