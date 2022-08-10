@@ -1,13 +1,13 @@
 .hero {display: flex;
-   max-width: 920px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 50px;
+   max-width: 1200px;
+
     flex-direction: column;
 justify-content: center;
 margin-bottom: 50px;}
 
 section > .hero {
-    width: 920px;
+    max-width: 1200px;
 }
 /* .hero_image {
     margin-left: 10px;
@@ -15,10 +15,15 @@ section > .hero {
     object-fit: cover;
 } */
 .hero_all_image {
-    height: 500px;
-    max-height: 500px;
-    max-width: 920px;
+    height: 700px;
+    max-width: 1200px;
     display: flex;
+}
+@media screen and (min-width: 765px) and (max-width:1199px) {
+.hero_all_image {
+    width: 96%;
+        height: 450px;
+    }
 }
 .hero_image--first{
     /* display:inline-block; */
@@ -36,11 +41,9 @@ section > .hero {
     object-fit: cover;
     /* display: inline-block; */
     padding-top: 71.7%;
-    padding-bottom: 12.8%;
+    padding-bottom: 6.8%;
     height: 100%;
-    width: 97%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 96%
 }
 .hero_image--second {
     display: inline-block;
@@ -58,15 +61,11 @@ section > .hero {
         padding-bottom: 15%;;
         height: 100%;
         width: 96%;
-        margin-left: auto;
-        margin-right: auto;
 }
 
 .hero_image--third{
     display: inline-block;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     height: auto;
     
 }
@@ -78,15 +77,7 @@ section > .hero {
     }
 }
 
-/* .hero_image--third img {
-object-fit: cover;
-    display: inline-block;
-    padding-top: 15%;
-    height: 100%;
-    width: 96%;
-    margin-left: auto;
-    margin-right: auto;
-} */
+
 @media screen  and (max-width: 764px){
 .hero_image--third img {
         object-fit: cover;
@@ -98,24 +89,15 @@ object-fit: cover;
         margin-right: 5
 }
 }
-/* .hero_image--third img {
-    object-fit: cover;
-    display: inline-block;
-    padding-top: 0;
-    width: 100%;
-    height: 100%;
-    margin-left: 5px;
-    margin-right: 5px;
-} */
+
 @media screen and (min-width: 765px) {
     .hero_image--third img{
             object-fit: cover;
             display: inline-block;
             padding-top: 15%;
             height: 100%;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
+            width: 96%;
+
         }
 }
 
@@ -136,13 +118,13 @@ object-fit: cover;
     object-fit: cover;
         display: inline-block;
         padding-bottom: 71.7%;
-        padding-top: 10.2%;
+        padding-top: 4.2%;
         height: 100%;
         width: 96%;
         margin-left: auto;
         margin-right: auto;
 }
-@media screen and (max-width: 764px){
+/* @media screen and (max-width: 764px){
 
    .hero_adaptive_text{
     margin-top: 30px;
@@ -161,7 +143,7 @@ object-fit: cover;
         margin-bottom: 40px;
         text-align: center;
     }
-}
+} */
  /* .hero_image:hover, .hero_image:focus{
     transform: scale(1.1);
  } */

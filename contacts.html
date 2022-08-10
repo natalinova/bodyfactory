@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BodyFactory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&family=Comfortaa:wght@400;500;600;700&family=Montserrat+Alternates:wght@400;500;600;700&family=Tenor+Sans&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600&family=Montserrat+Alternates:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/contacts.css">
+</head>
+
+<body>
+
+    <!--HEADER-->
+
+    <header class="head">
+        <div class="logo">
+           <a href="./index.html"> <img class="logo_img" src="./images/IMG_2380.PNG" alt="" width="60" height="60"></a>
+        </div>
+
+
+        <div class="header_menu_burger">
+            <div class="navbar">
+                <a href="./index.html">ГОЛОВНА</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn"> НАШІ ПОСЛУГИ
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="./corection.html">Корекція фігури</a>
+                        <a href="#">Естетика тіла та обличчя</a>
+                        <a href="#">Лікувальний та оздоровчий масаж</a>
+                        <a href="#">Релаксуючий масаж</a>
+                    </div>
+                </div>
+                <a href="./price.html">ПРАЙС</a>
+                <a href="#news">КОНТАКТИ</a>
+                <ul class="socials_header">
+                    <li class="socials__item"><a class="socials__link socials__link--dark" href=""> <svg
+                                class="socials__icon">
+                                <use href="./images/icons.svg#instagram"></use>
+                            </svg>
+                        </a></li>
+
+                    <li class="socials__item"> <a class="socials__link socials__link--dark" href=""> <svg
+                                class="socials__icon">
+                                <use href="./images/icons.svg#facebook"></use>
+                            </svg></a></li>
+
+                </ul>
+            </div>
+
+            <!-- меню бургер -->
+            <div class="burger_menu">
+                <input id="toggle" type="checkbox">
+
+                <label for="toggle" class="hamburger">
+                    <div class="top-bun"></div>
+                    <div class="meat"></div>
+                    <div class="bottom-bun"></div>
+                </label>
+
+                <div class="nav">
+                    <div class="nav-wrapper">
+                        <nav>
+                            <a href="./corection.html">Корекція фігури</a><br>
+                            <a href="#">Естетика тіла та обличчя</a><br>
+                            <a href="#">Лікувальний та оздоровчий масаж</a><br>
+                            <a href="#">Релаксуючий масаж</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </header>
+
+    
+
+     <!-- GOOGLE MAPS -->
+     <section class="contacts_google">
+        <div class="contacts_map margin_auto">
+            <iframe class="contacts_map_frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572.923307423541!2d24.00658441626172!3d49.84389853876265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add5f5d8e08c3%3A0x37889bea47df7bf6!2z0KHRgtGD0LTRltGPINC80LDRgdCw0LbRgyBCb2R5IEZhY3Rvcnk!5e0!3m2!1suk!2sua!4v1660069123655!5m2!1suk!2sua"
+                width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+     </section>
+
+
+    <section class="whereweare margin_auto">
+        <h2 class="services_h2_title margin_auto">
+            Ваш сеанс масажу без зайвих втрат часу
+        </h2>
+        <hr>
+        <p class="services_whereweare_text margin_auto">
+            Вам буде легко запланувати візит до нас, оскільки салон розташований в доступній локації в самому серці міста.
+            До нас зручно доїхати як громадським транспортом, так і автомобілем, а в прилеглих тихих вуличках завжди
+            знайдеться місце для паркування автомобіля.
+        </p>
+        <div class="whereweare_block">
+            <div class="contacts">
+                <h3 class="contacts_title font-title"> НАША АДРЕСА</h3>
+                <ul class="contacts_adress">
+                    <li class="footer_reference"><a class="contacts_adress_item"
+                            href="https://goo.gl/maps/FwnA2U8h5pGoPJsg6" target="_blank" rel="noreferrer noopener">м. Львів,
+                            вул. Князя Святослава, 5 </a></li>
+                    <li class="footer_reference"> <a class="contacts_adress_item" href="tel:+380991111111">+38 099 111 11
+                            11</a>
+                    </li>
+                </ul>
+                <!-- <div class="contacts_socials">
+            <h3 class="contacts_title_soc font-title">МИ В СОЦМЕРЕЖАХ:</h3>
+            <ul class="socials">
+                <li class="socials__item"><a class="socials__link socials__link--dark" href=""> <svg class="socials__icon">
+                            <use href="./images/icons.svg#instagram"></use>
+                        </svg>
+                    </a></li>
+    
+                <li class="socials__item"> <a class="socials__link socials__link--dark" href=""> <svg class="socials__icon">
+                            <use href="./images/icons.svg#facebook"></use>
+                        </svg></a></li>
+    
+            </ul>
+        </div> -->
+            </div>
+            <div class="contacts_howtogo">
+                <h3 class="contacts_title"> ЯК ДО НАС ДОЇХАТИ</h3>
+                <ul class="contacts_howtogo_list">
+                    <li>
+                        <p class="contacts_text">
+                            З сторони Городоцької - автобус № 29, 156, 111, 184, </br> маршрутка № 41,51, 25, 7, 15, трамвай
+                            № 6
+                        </p>
+                    </li>
+                    <li>
+                        <p class="contacts_text">
+                            З сторони Шевченка - автобус № 125, 210 маршрутка № 17
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+    
+    </section>
+
+      <!--  PHOTO BF -->
+      <section class="contacts_photo">
+        <img class="contacts_photo_item" src="./images/contacts_photo1.jpg" alt="">
+        <img class="contacts_photo_item" src="./images/contacts_photo2.jpg" alt="">
+      </section>
+<section class="cta">
+    <div class="cta_block">
+        <!-- <div class="contacts_position">
+    <div class="contact_us"> -->
+        <div class="contact_us_block contact_us_color">
+            <h2 class="contact_us_title font-title">
+                Завітайте до нас на масаж
+            </h2>
+            <p class="contact_us_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing consectetur, adipisicing elit. Et, quia! Praesentium
+                ut rem
+                soluta beatae,nam c consequuntur laboriosam corrupti.
+            </p>
+            <div class="contact_list_price">
+
+                <div class="price_list_block">
+                    <p class="contact_list_price_name">Lorem ipsum dolor sit ipsum dolo</p>
+                    <p class="contact_list_price_number">500</p>
+                </div>
+
+                <div class="short_line"></div>
+
+                <div class="price_list_block">
+                    <p class="contact_list_price_name">Lorem ipsum dolor sit ipsum dolo</p>
+                    <p class="contact_list_price_number">500</p>
+                </div>
+
+                <div class="short_line"></div>
+
+                <div class="price_list_block">
+                    <p class="contact_list_price_name">Lorem ipsum dolor sit ipsum dolo</p>
+                    <p class="contact_list_price_number">500</p>
+                </div>
+                
+                <div class="short_line"></div>
+
+
+                <div class="price_list_block">
+                    <p class="contact_list_price_name">Lorem ipsum dolor sit ipsum dolo</p>
+                    <p class="contact_list_price_number">500</p>
+                </div>
+
+                <div class="short_line"></div>
+            </div>
+            <button class="contact_us_button" type="button"> Призначити зустріч</button>
+        </div>
+        <!-- </div>
+
+</div> -->
+        <div class="contact_us_test">
+            <!-- <img class="contact_us_test_image" src="./images/contact_us2.jpeg"> -->
+        </div>
+    </div>
+
+
+
+</section>
+
+
+
+
+<!-- BUTTON ON TOP -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<footer>
+
+    <!-- FOOTER  -->
+    <div class="footer">
+
+        <div class="footer_about">
+            <div class="footer_logo_name">
+                <div class="footer_logo">
+                    <img class="footer_logo_png" src="./images/IMG_2380.PNG" alt="">
+                </div>
+                <div>
+                    <h2 class="footer_name">BODYFACTORY</h2>
+                </div>
+            </div>
+            <div class="footer_text_item">
+                <p class="footer_text">Lorem ipsum dolor sit earumtempore nam odit optio adipisci ducimus
+                    dolor</p>
+            </div>
+
+        </div>
+        <div class="contacts_references">
+            <h3 class="contacts_title font-title"> НAШІ ПОСЛУГИ</h3>
+            <ul>
+                <li class="footer_reference"> <a class="contacts_references_link" href=""> Корекція фігури</a></li>
+                <li class="footer_reference"><a class="contacts_references_link" href="">Естетика тіла та обличчя</a>
+                </li>
+                <li class="footer_reference"><a class="contacts_references_link" href="">Лікувальний масаж</a>
+                </li>
+                <li class="footer_reference"><a class="contacts_references_link" href="">Релаксуючий масаж</a></li>
+            </ul>
+
+        </div>
+
+
+        <div class="contacts">
+            <h3 class="contacts_title font-title"> НАША АДРЕСА</h3>
+            <ul class="contacts_adress">
+                <li class="footer_reference"><a class="contacts_adress_item"
+                        href="https://goo.gl/maps/FwnA2U8h5pGoPJsg6" target="_blank" rel="noreferrer noopener">м. Львів,
+                        вул. Князя Святослава, 5 </a></li>
+                <li class="footer_reference"> <a class="contacts_adress_item" href="tel:+380991111111">+38 099 111 11
+                        11</a>
+                </li>
+            </ul>
+            <div class="contacts_socials">
+                <h3 class="contacts_title_soc font-title">МИ В СОЦМЕРЕЖАХ:</h3>
+                <ul class="socials">
+                    <li class="socials__item"><a class="socials__link socials__link--dark" href=""> <svg
+                                class="socials__icon">
+                                <use href="./images/icons.svg#instagram"></use>
+                            </svg>
+                        </a></li>
+
+                    <li class="socials__item"> <a class="socials__link socials__link--dark" href=""> <svg
+                                class="socials__icon">
+                                <use href="./images/icons.svg#facebook"></use>
+                            </svg></a></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer_copyright">
+        <p>BodyFactory &#169 2022</p>
+    </div>
+</footer>
+<script src="./js/scroll_button.js"></script>
+<script src="./js/menu_price.js"></script>
+</body>
+
+</html>

@@ -5,7 +5,7 @@
 
 }
 .logo_img{
-    margin-left: 20px;
+    /* margin-left: 20px; */
     border-radius: 50%;
 }
 .header_menu_burger{
@@ -21,10 +21,19 @@
     margin-top: 30px;
     margin-left:auto;
     margin-right: auto;
-    max-width: 920px;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     
+}
+@media screen and (max-width:1199px) {
+    .head {
+            margin-top: 30px;
+            width: 96%;
+            display: flex;
+            justify-content: space-between;
+    
+        }
 }
 
 .header_logo_menu{
@@ -116,7 +125,7 @@
 }
 
 /*  кінець меню   */
-.socials {
+.socials_header {
     display: flex;
     align-items: center;
     justify-content: center;

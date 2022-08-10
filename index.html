@@ -25,19 +25,23 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/about_us.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/hero.css">
-    <link rel="stylesheet" href="./css/contact_us.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/contacts.css">
 </head>
 
 <body>
   
-<header class="head">
+<!--HEADER-->   
+ 
+<header class="head margin_auto">
     <div class="logo">
-        <img class="logo_img" src="./images/IMG_2380.PNG" alt="" width="60" height="60">
+    <a href="./index.html"> <img class="logo_img" src="./images/IMG_2380.PNG" alt="" width="60" height="60"></a>
     </div>
+
+
     <div class="header_menu_burger">
         <div class="navbar">
             <a href="#home">ГОЛОВНА</a>
@@ -47,19 +51,30 @@
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content" id="myDropdown">
-                    <a href="#">Корекція фігури</a>
+                    <a href="./corection.html">Корекція фігури</a>
                     <a href="#">Естетика тіла та обличчя</a>
                     <a href="#">Лікувальний та оздоровчий масаж</a>
                     <a href="#">Релаксуючий масаж</a>
                 </div>
             </div>
-            <a href="#">ПРАЙС</a>
-            <a href="#news">КОНТАКТИ</a>
+            <a href="./price.html">ПРАЙС</a>
+            <a href="./contacts.html">КОНТАКТИ</a>
+            <ul class="socials_header">
+                <li class="socials__item"><a class="socials__link socials__link--dark" href=""> <svg class="socials__icon">
+                            <use href="./images/icons.svg#instagram"></use>
+                        </svg>
+                    </a></li>
+            
+                <li class="socials__item"> <a class="socials__link socials__link--dark" href=""> <svg class="socials__icon">
+                            <use href="./images/icons.svg#facebook"></use>
+                        </svg></a></li>
+            
+            </ul>
         </div>
         
-
+ <!-- меню бургер -->
 <div class="burger_menu">
-<input id="toggle" type="checkbox"></input>
+<input id="toggle" type="checkbox">
 
 <label for="toggle" class="hamburger">
     <div class="top-bun"></div>
@@ -70,7 +85,7 @@
 <div class="nav">
     <div class="nav-wrapper">
         <nav>
-            <a href="#">Корекція фігури</a><br>
+            <a href="./corection.html">Корекція фігури</a><br>
             <a href="#">Естетика тіла та обличчя</a><br>
             <a href="#">Лікувальний та оздоровчий масаж</a><br>
             <a href="#">Релаксуючий масаж</a>
@@ -82,39 +97,32 @@
            
     </div>
 
-
 </header>
 
-</div>
+ <!-- HERO -->
    
-<section class="hero">
+<section class="hero margin_auto">
     <h1 class="font-title">Наш масаж змінить ваше життя назавжди </h1>
     <div class="hero_text_block">
 <p class="hero_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, quaerat dolores animi,perferendis
     nesciunt at ea, dolorem minus tempore necessitatibus. 
     modi. </p>
     </div>
-
-
     
     <div class="hero_link">
         <a  class="hero_anchor" href="#about_us">ПЕРЕГЛЯНУТИ НАШІ ПРОЦЕДУРИ &#8594</a> </div>
     
-    <div class="hero_all_image">
-        <div class="hero_image hero_image--first"> <img  src="./images/hero_no2.jpeg" alt="" > </div>
-        <div class="hero_image hero_image--second"> <img  src="./images/bf2_opt.jpg" alt="" > </div>
-        <div class="hero_image hero_image--third"> <img src="./images/version_2/hero_1.jpeg" alt="" > </div>
-        <div class="hero_image hero_image--four"> <img  src="./images/bf5_opt.jpg" alt="" > </div>
+    <div class="hero_all_image margin_auto">
+        <div class="hero_image hero_image--first margin_auto"> <img  src="./images/hero_no2.jpeg" alt="" > </div>
+        <div class="hero_image hero_image--second margin_auto"> <img  src="./images/bf2_opt1.jpg" alt="" > </div>
+        <div class="hero_image hero_image--third margin_auto"> <img src="./images/version_2/hero_1.jpeg" alt="" > </div>
+        <div class="hero_image hero_image--four margin_auto"> <img  src="./images/bf5_opt.jpg" alt="" > </div>
      </div>
 
-<!-- <div class="hero_adaptive_text">
-    <p class="hero_text hero_text_add">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, quaerat dolores animi,perferendis
-        nesciunt at ea, dolorem minus tempore necessitatibus. Lorem ipsum dolor sit amet
-        modi. </p>
-        <button class="contact_us_button " type="button"> Записатись на візит</button>
-</div> -->
 </section>
-
+  
+  <!-- ABOUT US -->
+ 
 <section class="about_us" id="about_us">
     <h2 class="about_us_bigtitle font-title">Наші послуги</h2>
     <div class="about_us_line">
@@ -132,16 +140,16 @@
         provident, atque voluptas id recusandae, facere lib</p>
 
 </div>
+
 <div class='about_us_container'>
-    <svg class="about_us_arrow" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <a href="#"> <svg class="about_us_arrow" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
         <path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
             data-name="3-Arrow Right" />
-    </svg>
+    </svg></a>
+    
 </div>
         </div>
-        
-
-        
+      
     </div>
     <div class="about_us_line">
     
@@ -158,14 +166,15 @@
 
 </div>
 <div class='about_us_container'>
-    <svg class="about_us_arrow" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-        <path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
-            data-name="3-Arrow Right" />
-    </svg>
+    <a href="#"> <svg class="about_us_arrow" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32">
+            <path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
+                data-name="3-Arrow Right" />
+        </svg></a>
+
 </div>
     </div>
         
-
 
 </div>
 <div class="about_us_line">
@@ -185,10 +194,12 @@
 
 </div>
 <div class='about_us_container'>
-    <svg class="about_us_arrow" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-        <path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
-            data-name="3-Arrow Right" />
-    </svg>
+    <a href="#"> <svg class="about_us_arrow" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32">
+            <path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
+                data-name="3-Arrow Right" />
+        </svg></a>
+
 </div>
     </div>
 
@@ -210,15 +221,14 @@
 
 </div>
 <div class='about_us_container'>
-    <svg class="about_us_arrow" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-        <path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
-            data-name="3-Arrow Right" />
-    </svg>
+    <a href="#"> <svg class="about_us_arrow" width="25" height="25" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32">
+            <path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
+                data-name="3-Arrow Right" />
+        </svg></a>
+
 </div>
     </div>
-    
-    
-
     
 
 </div>
@@ -227,6 +237,10 @@
 </div>
 
 </section>
+
+
+ <!-- WHY WE WITH PHOTO -->
+
 <section class="why_we">
     <img class="why_we_image_second" src="./images/version_2/whywe.jpeg" alt="" width="245" height="435">
 <img class="why_we_image_first" src="./images/version_2/hero_7.jpeg" alt="" width="180" height="240">
@@ -244,7 +258,10 @@
 <a class="why_we_link" href="#about_us">ДИВИТИСЬ &#8594</a>
 </section>
 
- <section class="onetwothree">
+ <!-- ONE TWO THREE  -->
+
+
+ <section class="onetwothree margin_auto">
     <div class="onetwothree_item">
         <div class="onetwothree_number">
             <p class="onetwothree_number--text font-title" >01</p>
@@ -289,54 +306,124 @@
         <div class="about_us_line why_we_line"></div>
     </div>
 </section>
-<section class="contact_us">
-<div class="contacts_position">
-    <div class="contact_us_block contact_us_color">
-        <h2 class="contact_us_title font-title">
-            Завітайте до нас на масаж
-        </h2>
-        <p class="contact_us_text">
-            Lorem ipsum dolor sit amet consectetur adipisicing consectetur, adipisicing elit. Et, quia! Praesentium ut rem
-            soluta beatae,nam c consequuntur laboriosam corrupti.
-        </p>
-        <div class="contact_list_price">
-    
-    
-            <div class="price_list_block">
-                <p class="contact_list_price_name">Lorem ipsum dolor sit ipsum dolo</p>
-                <p class="contact_list_price_number">500</p>
-            </div>
-    
-            <div class="short_line"></div>
-    
-            <div class="price_list_block">
-                <p class="contact_list_price_name">Lorem ipsum dolor sit ipsum dolo</p>
-                <p class="contact_list_price_number">500</p>
-            </div>
-    
-            <div class="short_line"></div>
-    
-            <div class="price_list_block">
-                <p class="contact_list_price_name">Lorem ipsum dolor sit ipsum dolo</p>
-                <p class="contact_list_price_number">500</p>
-            </div>
-    
-            <div class="short_line"></div>
-        </div>
-    
-        <button class="contact_us_button" type="button"> Призначити зустріч</button>
-</div>
-<!-- <img class="contact_us_image" src="./images/call_us.webp" alt="Contact us, please!"> -->
+ 
+ <!-- CALL TO ACTIONS  -->
 
+
+
+ 
+
+
+
+ <!-- <section class="cta" >
+    <div class="cta_block">
+
+        <div class="contact_us_block contact_us_color">
+            <h2 class="contact_us_title font-title">
+                Завітайте до нас на масаж
+            </h2>
+            <p class="contact_us_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing consectetur, adipisicing elit. Et, quia! Praesentium
+                ut rem
+                soluta beatae,nam c consequuntur laboriosam corrupti.
+            </p>
+            <div class="contact_list_price">
+
+                <div class="price_list_block">
+                    <p class="contact_list_price_name">Lorem ipsum dolor sit ipsum dolo</p>
+                    <p class="contact_list_price_number">500</p>
+                </div>
+
+                <div class="short_line"></div>
+
+                <div class="price_list_block">
+                    <p class="contact_list_price_name">Lorem ipsum dolor sit ipsum dolo</p>
+                    <p class="contact_list_price_number">500</p>
+                </div>
+
+                <div class="short_line"></div>
+
+                <div class="price_list_block">
+                    <p class="contact_list_price_name">Lorem ipsum dolor sit ipsum dolo</p>
+                    <p class="contact_list_price_number">500</p>
+                </div>
+
+                <div class="short_line"></div>
+            </div>
+            <button class="contact_us_button" type="button"> Призначити зустріч</button>
+        </div>
+   
+<div class="contact_us_test">
+   
+</div>
+    </div>
+
+</section> -->
+
+
+<!-- test -->
+
+<section class="cta">
+    <div class="cta_block">
+        <!-- <div class="contacts_position">
+    <div class="contact_us"> -->
+        <div class="contact_us_block contact_us_color">
+            <h2 class="contact_us_title font-title">
+                Завітайте до нас на масаж
+            </h2>
+            <p class="contact_us_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing consectetur, adipisicing elit. Et, quia! Praesentium
+                ut rem
+                soluta beatae,nam c consequuntur laboriosam corrupti.
+            </p>
+            <div class="contact_list_price">
+
+                <div class="price_list_block">
+                    <p class="contact_list_price_name">Lorem ipsum dolor sit ipsum dolo</p>
+                    <p class="contact_list_price_number">500</p>
+                </div>
+
+                <div class="short_line"></div>
+
+                <div class="price_list_block">
+                    <p class="contact_list_price_name">Lorem ipsum dolor sit ipsum dolo</p>
+                    <p class="contact_list_price_number">500</p>
+                </div>
+
+                <div class="short_line"></div>
+
+                <div class="price_list_block">
+                    <p class="contact_list_price_name">Lorem ipsum dolor sit ipsum dolo</p>
+                    <p class="contact_list_price_number">500</p>
+                </div>
+                
+                <div class="short_line"></div>
+
+                <div class="price_list_block">
+                    <p class="contact_list_price_name">Lorem ipsum dolor sit ipsum dolo</p>
+                    <p class="contact_list_price_number">500</p>
+                </div>
+
+                <div class="short_line"></div>
+            </div>
+            <button class="contact_us_button" type="button"> Призначити зустріч</button>
+        </div>
+        <!-- </div>
+
+</div> -->
+        <!-- <div class="contact_us_test">
+           
+        </div> -->
+    </div>
 
 </section>
 
-</div>
+<!-- BUTTON ON TOP -->
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <footer>
 
-
+ <!-- FOOTER  -->
     <div class="footer">
         
             <div class="footer_about">
@@ -398,6 +485,5 @@
 </footer>
 <script src="./js/scroll_button.js"></script>
 <script src="./js/menu_price.js"></script>
-<script src="./js/burger.js"></script>
 </body>
 </html>
