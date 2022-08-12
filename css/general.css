@@ -28,6 +28,8 @@ a{
     text-decoration: none;
 }
 
+h1, h2{margin: 0;}
+
 .line_bold {
 margin-left: 50px;
     width: 1250px;
@@ -61,6 +63,43 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
+@media screen and (max-width: 764px) {
+
+    .services_h1_title {
+        width: 96%;
+        margin-top: 80px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 1.4;
+        color: var(--dark-first);
+
+        margin: 0;
+        font-size: 35px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width:765px) and (max-width:1199px) {
+    .services_h1_title {
+        width: 96%;
+    }
+}
+
+@media screen and (min-width: 765px) {
+
+    .services_h1_title {
+
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+        color: var(--dark-first);
+        line-height: var(--line-height-text);
+
+    }
+}
+
  /* FONTS */
 @font-face {
     font-family: 'Gilroy';

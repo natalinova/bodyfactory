@@ -147,11 +147,11 @@ section > .hero {
  /* .hero_image:hover, .hero_image:focus{
     transform: scale(1.1);
  } */
-@media screen and (max-width: 764px) {
+/* @media screen and (max-width: 764px) {
 
     h1 {
         padding-top: 40px;
-            /* font-family: 'DaysOne'; */
+
             font-weight: 700;
             text-align: center;
             color: var(--dark-first);
@@ -167,7 +167,6 @@ section > .hero {
 
     h1 {
             padding-top: 50px;
-            /* font-family: 'DaysOne'; */
             font-size: 45px;
             font-weight: 700;
             text-align: center;
@@ -175,7 +174,7 @@ section > .hero {
     
             margin: 0;
         }
-}
+} */
 /* h1{padding-top: 50px;
    
     font-size: 45px;
@@ -189,14 +188,19 @@ section > .hero {
 .hero_text{
     
     text-align: center;
-    line-height: 17px;
-    font-size: 12px;
+    line-height: var(--line-height-text);
+    font-size: 16px;
     
 }
 .hero_text_block{
-margin-left: auto;
-margin-right: auto;
-max-width: 560px;
+
+max-width: 90%;
+}
+@media screen and (min-width: 765px){
+.hero_text_block {
+       
+        max-width: 50%;
+    }
 }
 .hero_link {
     margin-bottom: 35px;
@@ -215,6 +219,6 @@ max-width: 560px;
 }
 .hero_anchor {
     color: var(--dark-first);
-    font-size: 10px;
+    font-size: 16px;
 }
  

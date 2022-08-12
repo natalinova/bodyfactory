@@ -25,6 +25,7 @@
 .services_whereweare_text{
     text-align: start;
     margin-top: 50px;
+    margin-bottom: 50px;
     
     line-height: var(--line-height-text);
 }
@@ -33,7 +34,7 @@
     .services_whereweare_text {
         width: 96%;
             text-align: start;
-            margin-top: 50px;
+    
             line-height: var(--line-height-text);
         }
 }
@@ -41,13 +42,21 @@
 @media screen and (min-width:1200px) {
     .services_whereweare_text {
             text-align: start;
-            margin-top: 50px;
+           width: 70%;
+            margin-bottom: 50px;
     
             line-height: var(--line-height-text);
         }
 }
 .contacts_howtogo{
-    max-width: 55%;
+    padding-top: 10px;
+    max-width: 96%;
+}
+@media screen and (min-width:765px) {
+    .contacts_howtogo {
+            padding-top: 10px;
+            max-width: 55%;
+        }
 }
 .contacts_howtogo_list{
     padding-left: 50px;
@@ -80,12 +89,33 @@
     }
 }
 .contacts_photo{
+    justify-content: space-between;
     object-fit: cover;
     max-width: var(--width-basic);
     display: flex;
+    flex-direction: column;
     margin-bottom: 120px;
 }
+
+@media screen and (min-width:765px) {
+.contacts_photo {
+        justify-content: space-between;
+        object-fit: cover;
+        max-width: var(--width-basic);
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 120px;
+    }
+}
 .contacts_photo_item{
-    max-width: 50%;
-    padding: 20px;
+    object-fit: cover;
+    max-width: 96%;
+    padding: 10px;
+}
+@media screen and (min-width:765px) {
+.contacts_photo_item {
+        object-fit: cover;
+        max-width: 50%;
+        padding: 20px;
+    }
 }

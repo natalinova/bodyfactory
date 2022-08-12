@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BodyFactory</title>
+    <title>Body Factory</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,86 +36,94 @@
 
     <!--HEADER-->
 
-    <header class="head">
+<header class="head">
+    <div class="head_full">
         <div class="logo">
             <a href="./index.html"> <img class="logo_img" src="./images/IMG_2380.PNG" alt="" width="60" height="60"></a>
-            
+            <h2 class="footer_name">BODY FACTORY</h2>
         </div>
 
 
         <div class="header_menu_burger">
             <div class="navbar">
-                <a href="./index.html">ГОЛОВНА</a>
+                <a  href="./index.html">ГОЛОВНА</a>
 
                 <div class="dropdown">
-                    <button class="dropbtn"> НАШІ ПОСЛУГИ
+                    <button class="dropbtn active"> НАШІ ПОСЛУГИ
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content" id="myDropdown">
                         <a href="./corection.html">Корекція фігури</a>
-                        <a href="#">Естетика тіла та обличчя</a>
-                        <a href="#">Лікувальний та оздоровчий масаж</a>
-                        <a href="#">Релаксуючий масаж</a>
+                        <a href="./face.html">Естетика тіла та обличчя</a>
+                        <a href="./health.html">Лікування та оздоровлення</a>
+                        <a href="./relax.html">Релакс</a>
                     </div>
                 </div>
-                <a href="./price.html">ПРАЙС</a>
+                <a href="https://b357533.alteg.io/company/341190/select-services?o=m1291727s7472337,7286689,7765266"
+                    target="_blank">ПРАЙС</a>
                 <a href="./contacts.html">КОНТАКТИ</a>
-                <ul class="socials_header">
-                    <li class="socials__item"><a class="socials__link socials__link--dark" href=""> <svg
-                                class="socials__icon">
-                                <use href="./images/icons.svg#instagram"></use>
-                            </svg>
-                        </a></li>
 
-                    <li class="socials__item"> <a class="socials__link socials__link--dark" href=""> <svg
-                                class="socials__icon">
-                                <use href="./images/icons.svg#facebook"></use>
-                            </svg></a></li>
-
-                </ul>
             </div>
+            <ul class="socials_header">
+                <li class="socials__item"><a class="socials__link" href=""> <svg class="socials__icon">
+                            <use href="./images/icons.svg#instagram"></use>
+                        </svg>
+                    </a></li>
 
-            <!-- меню бургер -->
-            <div class="burger_menu">
-                <input id="toggle" type="checkbox">
+                <li class="socials__item"> <a class="socials__link " href=""> <svg class="socials__icon">
+                            <use class="socials__icon" href="./images/icons.svg#facebook"></use>
+                        </svg></a></li>
 
-                <label for="toggle" class="hamburger">
-                    <div class="top-bun"></div>
-                    <div class="meat"></div>
-                    <div class="bottom-bun"></div>
-                </label>
-
-                <div class="nav">
-                    <div class="nav-wrapper">
-                        <nav>
-                            <a href="./corection.html">Корекція фігури</a><br>
-                            <a href="#">Естетика тіла та обличчя</a><br>
-                            <a href="#">Лікувальний та оздоровчий масаж</a><br>
-                            <a href="#">Релаксуючий масаж</a>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-
-
+            </ul>
         </div>
 
-    </header>
+    </div>
+
+    <!-- меню бургер -->
+    <div class="burger_menu">
+        <input id="toggle" type="checkbox">
+
+        <label for="toggle" class="hamburger">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+        </label>
+
+        <div class="nav">
+            <div class="nav-wrapper">
+                <nav>
+                    <a href="./corection.html">Корекція фігури</a><br>
+                    <a href="./face.html">Естетика тіла та обличчя</a><br>
+                    <a href="./health.html">Лікування та оздоровлення</a><br>
+                    <a href="./relax.html">Релакс</a>
+                    <a href="./contacts.html">Контакти</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</header>
+
 
  <!-- 2 HERO -->
  <section class="services_hero margin_auto" >
+    <h1 class="services_h1_title margin_auto"> Ідеальна фігура завдяки нашому масажу</h1>
+    
+    <p class="services_after_h2 margin_auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum itaque,
+        explicabo labore suscipit odit . Obcaecati delectus quas reiciendis, dolores natus
+        minima nrum sapiente alias, tenetur nulla dolorum quidem? </p>
     <div class="services_hero_img_block margin_auto">
 <img class="services_hero_img margin_auto" src="./images/correction_header.jpeg">
 <img class="services_hero_img_ad margin_auto" src="./images/correction_header_ad.jpeg">
     </div>
    
-    <h1 class="services_h2_title margin_auto"> Ідеальна фігура завдяки нашому масажу</h1>
-    <hr>
-    <p class="services_after_h2 margin_auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum itaque, explicabo labore suscipit odit illo repudiandae assumenda dolor. Obcaecati delectus quas reiciendis, dolores natus minima neque sunt? Numquam, blanditiis cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, hic voluptate asperiores, adipisci aspernatur rerum sapiente alias, tenetur nulla dolorum quidem? </p>
-   
+    
  </section>
  <!-- 3 OUR PLUSES -->
-<section class="onetwothree">
+<section class="onetwothree margin_auto">
     <div class="onetwothree_item">
         <div class="onetwothree_number">
             <p class="onetwothree_number--text font-title">01</p>
@@ -126,7 +134,9 @@
         </div>
         <div class="onetwothree_text">
             <p class="onetwothree_text--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                repellendus facilis distinctio,</p>
+                repellendus facilis distinctio, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
+                non, voluptatibus quae quidem magni amet consequuntur rerum neque! Necessitatibus odit suscipit
+                molestiae illo debitis cupiditate aut enim rerum a officiis!</p>
         </div>
         <div class="about_us_line why_we_line">
 
@@ -142,7 +152,9 @@
         </div>
         <div class="onetwothree_text">
             <p class="onetwothree_text--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                repellendus faci</p>
+                repellendus faci Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, rerum fugiat animi
+                dolores inventore, quos rem delectus necessitatibus voluptas beatae vel. Provident ullam sapiente, nulla
+                omnis blanditiis voluptatem exercitationem veniam.</p>
         </div>
         <div class="about_us_line why_we_line">
 
@@ -158,28 +170,38 @@
         </div>
         <div class="onetwothree_text">
             <p class="onetwothree_text--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. REt, quia!
-                Praesentv i facilis distinctio,</p>
+                Praesentv i facilis distinctio, Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+                reiciendis suscipit esse assumenda modi nobis commodi sed in veritatis. Corporis quis corrupti tenetur.
+                Quaerat tempore saepe ipsam. Eveniet, velit eius?</p>
         </div>
         <div class="about_us_line why_we_line"></div>
     </div>
 </section>
   <!-- 4 ABOUT -->
 <section class="services_about margin_auto">
-<h2 class="services_h2_title margin_auto" > Як отримати вражаючу форму без зайвих зусиль?</h2>
-<hr>
+<h2 class="services_h2_title margin_auto" > Як підтримати хорошу форму без зайвих зусиль?</h2>
 <div class="services_about_block margin_auto">
-    <p class="services_about_text margin_auto"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam maxime fugiat maiores omnis vero, quibusdam repellat non officia similique, aliquid, neque praesentium laborum magnam sit nam sint iste molestiae. Atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nisi minima placeat, asperiores exercitationem harum dolor, fugiat illum iure ratione neque. Voluptates itaque ea molestias, obcaecati necessitatibus dignissimos officiis? Vitae.</p>
+    <p class="services_about_text margin_auto"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unis vero, quibusdam repellat non officia similique, aliquid, neque pradolor sit amet consectetur adipisicing elit. Minus nisi minima placeat, asperiores exercitationem harum dolor, fugiat illum iure ratione neque. Voluptates itaque ea molestias, obcaecati necessitatibus dignissimos officiis? Vitae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet dolore eligendi, vitae non quia, iusto odio natus in veniam saepe illum aperiam, inventore tempora dolor quisquam consectetur. Omnis, quia amet.  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore quo odit in reiciendis dicta quasi tempora provident quis enim dolorum minima id alias voluptates architecto perspiciatis earum blanditiis, veritatis tenetur? </p>
     <div class="services_about_image_block margin_auto">
-    <img class="services_about_image" src="./images/correction_2.jpeg" alt="">
+    <img class="services_about_image" src="./images/correction_about.jpeg" alt="">
     </div>
-
+</div>
+<ul class="services_about_list margin_auto">
+    <li class="services_about_list--item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, aspernatur voluptas illum veritatis nam maiores quidem sed reiciendis consequuntur repellat, tempora dolores magni dignissimos quis reprehenderit hic. Omnis, ipsum asperiores.</li>
+    <li class="services_about_list--item">Lorem ipsum dolor sit,  elit. Labore, aspernatur
+        voluptas illum veritatis nam maiores quidem sed reiciendis consequuntur repellat, tempora dolores magni dignissimos
+        quis reprehenderit hic. Omnis, ipsum asperiores.</li>
+        <li class="services_about_list--item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, aspernatur
+            voluptas illum veritatis nam maiores quidem sed reiciendis magni dignissimos
+            quis reprehenderit hic. Omnis, ipsum asperiores.</li>
+</ul>
 
 </section>
 
    <!-- 5 PRICE -->
    <section class="price margin_auto ">
     <h2 class="services_h2_title margin_auto"> Ціни на послуги масажу для корекції тіла </h2>
-    <hr>
+    
 <table class="services_price margin_auto">
     <thead >
         <tr class="table_title">
@@ -252,18 +274,26 @@
 
     <!-- 6 VIDEO -->
     <section class="services_video margin_auto"> 
-        <h2 class="services_h2_title margin_auto"> Як ми працюємо </h2>
-        <hr>
-<iframe class="services_video_frame" width="560" height="315" src="https://www.youtube.com/embed/2KmVTtSIOEQ" title="YouTube video player"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        
+        <h2 class="services_h2_title margin_auto"> Наша перевага - індивідуальний підхід до клієнта </h2>
+<div class="video_block margin_auto">
+<iframe class="services_video_frame margin_auto" width="560" height="315" src="https://www.youtube.com/embed/2KmVTtSIOEQ"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>
+<div class="services_video_text margin_auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae harum
+    eligendi culpa voluptates maiores facere, aut qui neque rerum fuga quidem tempora iusto architecto cum quam aliquid
+    assumenda fugit placeat!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente enim dolore ducimus
+    consectetur temporibus nemo, non tempora maiores. Sunt ex cum nesciunt incidunt harum ratione ea laborum possimus,
+    pariatur tempora? </div>
+</div>
+
     </section>
 
   <!-- 7 DETAILS -->
 <section class="services_detail margin_auto">
     <h2 class="services_h2_title margin_auto"> Ми турбуємось про ваш комфорт</h2>
-    <hr>
-    <p class="services_detail_text"> Ми хочемо щоб масаж був максимально приємною процедурою для наших гостей, тому ми пропонуємо багато приємних дрібниць, які входять у вартість наших послуг
+    <p class="services_detail_text margin_auto"> Ми хочемо щоб масаж був максимально приємною процедурою для наших гостей, тому ми пропонуємо багато приємних дрібниць, які входять у вартість наших послуг
     </p>
     <ul class="services_detail_block">
         <li class="services_detail_item">
@@ -376,7 +406,10 @@
 
                 <div class="short_line"></div>
             </div>
-            <button class="contact_us_button" type="button"> Призначити зустріч</button>
+            <a class="contact_us_button"
+                href="https://b357533.alteg.io/company/341190/select-services?o=m1291727s7472337,7286689,7765266" target="_blank">
+                <p>Призначити зустріч</p>
+            </a>
         </div>
        
         <div class="contact_us_test">
@@ -390,44 +423,56 @@
 <!-- BUTTON ON TOP -->
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
 <footer>
-    <!-- FOOTER -->
     <div class="footer">
-    
+
         <div class="footer_about">
             <div class="footer_logo_name">
                 <div class="footer_logo">
                     <img class="footer_logo_png" src="./images/IMG_2380.PNG" alt="">
                 </div>
-                <div>
-                    <h2 class="footer_name">BODYFACTORY</h2>
-                </div>
+
+                <h2 class="footer_name_add">BODY FACTORY</h2>
+
             </div>
             <div class="footer_text_item">
-                <p class="footer_text">Lorem ipsum dolor sit earumtempore nam odit optio adipisci ducimus
+                <p class="footer_text">Lorem ipsum dolor sit earumtempore nam odit optio adipisci ducimus sit
+                    earumtempore
+                    nam odit optio
                     dolor</p>
             </div>
-    
+
         </div>
         <div class="contacts_references">
             <h3 class="contacts_title font-title"> НAШІ ПОСЛУГИ</h3>
-            <ul>
-                <li class="footer_reference"> <a class="contacts_references_link" href=""> Корекція фігури</a></li>
-                <li class="footer_reference"><a class="contacts_references_link" href="">Естетика тіла та обличчя</a></li>
-                <li class="footer_reference"><a class="contacts_references_link" href="">Лікувальний масаж</a>
-                </li>
-                <li class="footer_reference"><a class="contacts_references_link" href="">Релаксуючий масаж</a></li>
-            </ul>
-    
+            <div class="contacts_adress_1">
+                <a class="contacts_references_link--new" href="./corection.html"> Корекція фігури</a>
+                <a class="contacts_references_link--new" href="./face.html">Естетика тіла та обличчя</a>
+                <a class="contacts_references_link--new" href="./health.html">Лікування та оздоровлення</a>
+
+                <a class="contacts_references_link--new" href="./relax.html">Релакс</a>
+
+            </div>
+            <!-- <ul class="contacts_adress">
+            <li class="footer_reference"> <a class="contacts_references_link" href="./corection.html"> Корекція фігури</a></li>
+            <li class="footer_reference"><a class="contacts_references_link" href="./face.html">Естетика тіла та обличчя</a></li>
+            <li class="footer_reference"><a class="contacts_references_link" href="./health.html">Лікувальний масаж</a>
+            </li>
+            <li class="footer_reference"><a class="contacts_references_link" href="./relax.html">Релаксуючий масаж</a></li>
+        </ul> -->
+
         </div>
-    
-    
+
+
         <div class="contacts">
             <h3 class="contacts_title font-title"> НАША АДРЕСА</h3>
             <ul class="contacts_adress">
-                <li class="footer_reference"><a class="contacts_adress_item" href="https://goo.gl/maps/FwnA2U8h5pGoPJsg6"
-                        target="_blank" rel="noreferrer noopener">м. Львів, вул. Князя Святослава, 5 </a></li>
-                <li class="footer_reference"> <a class="contacts_adress_item" href="tel:+380991111111">+38 099 111 11 11</a>
+                <li class="footer_reference"><a class="contacts_adress_item"
+                        href="https://goo.gl/maps/FwnA2U8h5pGoPJsg6" target="_blank" rel="noreferrer noopener">м. Львів,
+                        вул. Князя Святослава, 5 </a></li>
+                <li class="footer_reference"> <a class="contacts_adress_item" href="tel:+380991111111">+38 099 111 11
+                        11</a>
                 </li>
             </ul>
             <div class="contacts_socials">
@@ -438,21 +483,21 @@
                                 <use href="./images/icons.svg#instagram"></use>
                             </svg>
                         </a></li>
-    
+
                     <li class="socials__item"> <a class="socials__link socials__link--dark" href=""> <svg
                                 class="socials__icon">
                                 <use href="./images/icons.svg#facebook"></use>
                             </svg></a></li>
-    
+
                 </ul>
             </div>
         </div>
-    
+
     </div>
     <div class="footer_copyright">
-        <p>BodyFactory &#169 2022</p>
+        <p>Body Factory &#169 2022</p>
     </div>
-    </footer>
+</footer>
     <script src="./js/scroll_button.js"></script>
     <script src="./js/menu_price.js"></script>
 </body>

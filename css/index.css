@@ -103,6 +103,9 @@ margin-left: 50px;
 } */
 @media screen and (max-width:764px) {
     .about_us_bigtitle {
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
         /* padding-left: 15px; */
         text-align: start;
             font-size: 35px;
@@ -129,7 +132,7 @@ margin-left: 50px;
 }
 @media screen and (min-width:765px) {
     .about_us_title {
-            width: 265px;
+            width: 300px;
             font-size: 18px;
             padding-left: 23px;
             font-style: normal;
@@ -138,7 +141,7 @@ margin-left: 50px;
 }
 
 .about_title_block{
-    max-width: 265px;
+    max-width: 300px;
     padding-top: 7px;
 }
 @media screen and (max-width:764px) {
@@ -261,7 +264,7 @@ margin-left: 50px;
 }
 
 .why_we_title{
-
+    margin-left: 8px;
     top: -595px;
     font-size: 35px;
     max-width: 320px;
@@ -274,7 +277,7 @@ margin-left: 50px;
     .why_we_title {
     
             position: relative;
-            left: 400px;
+            left: 420px;
             top: -415px;
             font-size: 35px;
             max-width: 320px;
@@ -287,7 +290,7 @@ margin-left: 50px;
 .why_we_title {
        
         position: relative;
-        left: 530px;
+        left: 540px;
         top: -415px;
         font-size: 35px;
         max-width: 320px;
@@ -365,13 +368,13 @@ margin-left: 50px;
     
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 @media screen and (min-width:765px) {
     .onetwothree {
             flex-direction: row;
             display: flex;
-            margin-bottom: 0;
+            margin-bottom: 120px;
         }
 }
 .onetwothree_item::before{
@@ -415,14 +418,13 @@ margin-left: 50px;
     margin-bottom: 25px;
     color: var(--dark-first);
 }
-.onetwothree_text{
-    margin-bottom: 20px;
-    padding-right: 20px;
-}
+/* .onetwothree_text{
+   
+} */
 @media screen and (min-width:765px) {
-    .onetwothree_text {
-            margin-bottom: 150px;
-        }
+    /* .onetwothree_text {
+            
+        } */
 }
 @media screen and (min-width:765px) {
     .why_we_line {
@@ -491,13 +493,14 @@ font-size: 12px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
 
  }
  .contact_us_block {
     display: flex;
         flex-direction: column;
-        height: 600px;
+        
         margin-top: auto;
         margin-bottom: auto;
     align-items: center;
@@ -509,6 +512,8 @@ font-size: 12px;
      max-width: 450px;
      justify-content: center;
      display: flex;
+    height: 600px;
+
     background: linear-gradient(90deg,
                 rgba(215, 215, 217, 1) 0%,
                 rgba(215, 215, 217, 0) 100%),
@@ -525,17 +530,18 @@ font-size: 12px;
  .contact_us_block{
     max-width: 450px;
         margin-left: 50%;
-        justify-content: end;
+        height: 550px;
+        justify-content:center;
     
         background-color: transparent;
  }
  }
  @media screen and (min-width:1200px) {
      .contact_us_block {
-
+        height: 550px;
          max-width: 450px;
          margin-left: 50%;
-         justify-content: end;
+         justify-content: center;
          
          background-color: transparent;
 
@@ -547,7 +553,7 @@ font-size: 12px;
      font-size: 35px;
      text-align: center;
      color: var(--dark-first);
-     margin-top: 30px;
+     margin:0;
  }
 
  .contact_list_price {
@@ -566,7 +572,8 @@ font-size: 12px;
      padding-right: 30px;
      font-size: 14px;
      line-height: 1.8;
-     margin-bottom: 20px;
+     margin: 20px 0;
+
  }
 
  .price_list_block {
@@ -591,15 +598,20 @@ font-size: 12px;
 
 
  .contact_us_button {
-     margin-bottom: 20px;
      width: 200px;
+     margin-bottom: 15px;
      height: 60px;
      border-radius: 20px;
-     background-color: var(--most-light-second);
+     background-color: #b8bbbb;
      color: var(--dark-first);
      font-weight: bold;
-     border: 1px solid var(--dark-first);
+     border: none;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     /* border: 1px solid var(--dark-first); */
      box-shadow: 0px 0px 70px -50px rgba(0, 0, 0, 0.4);
+    /* box-shadow: 0px 0px 21px 4px rgba(53, 89, 45, 0); */
  }
 
  .short_line {

@@ -1,16 +1,21 @@
 .logo{
-    width: 40px;
     height: 40px;
+    display: flex;
+    align-items:center;
     /* background-color: var(--dark-first); */
 
 }
 .logo_img{
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
     /* margin-left: 20px; */
     border-radius: 50%;
 }
 .header_menu_burger{
     display: flex;
-    align-items: center;
+    align-items:center;
+    padding-bottom: 10px;
 }
 /* .head_test {
     width: 100vw;
@@ -23,6 +28,7 @@
     margin-right: auto;
     max-width: 1200px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     
 }
@@ -35,7 +41,11 @@
     
         }
 }
-
+.head_full{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .header_logo_menu{
     display: flex;
     justify-content: space-around;
@@ -70,7 +80,7 @@
 
 .dropdown .dropbtn {
     cursor: pointer;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
     border: none;
     outline: none;
@@ -126,13 +136,21 @@
 
 /*  кінець меню   */
 .socials_header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-block-start: 0;
-    margin-block-end: 0;
+    display: none
 
 }
+@media screen and (min-width:765px) {
+    .socials_header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-block-start: 0;
+            margin-block-end: 0;
+    
+        }
+}
+
+
 .socials__link {
     display: flex;
     justify-content: center;
@@ -171,9 +189,9 @@
     height: 20px;
     transition: fill var(--time);
 }
-.socials__link--dark {
+/* .socials__link--dark {
 color: var(--light-second);
-}
+} */
 li {
     list-style: none;
 }
@@ -186,7 +204,7 @@ li {
     align-items: center;
     /* margin-top: 10px; */
 }
-.menu {
+/* .menu {
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -233,7 +251,7 @@ li {
     stroke-dasharray: 90 207;
     stroke-dashoffset: -134;
     stroke-width: 6;
-}
+} */
 
 /*стилі до бургера*/
 
@@ -377,6 +395,8 @@ Nav Styles
 }
 nav {
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
   /* margin-left: 23%; */
 }
 nav a {
@@ -436,4 +456,37 @@ Animations
         display: none;
     }
 
+}
+.active::after {
+    /* position: absolute; */
+    /* left: 0; */
+    content: '';
+    display: block;
+    background-color: var(--dark-first);
+    width: 100%;
+    height: 1px;
+    border-radius: 2px;
+    /* bottom: 20px; */
+    color: var(--dark-first);
+}
+/* .navbar a {
+    float: left;
+    display: block;
+
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+    border-bottom: 3px solid transparent;
+} */
+.navbar a.active::after {
+    content: '';
+        display: block;
+        background-color: var(--dark-first);
+        width: 100%;
+        height: 1px;
+        border-radius: 2px;
+        /* bottom: 20px; */
+        color: var(--dark-first);
+    /* border-bottom: 1px solid var(--dark-first); */
 }
