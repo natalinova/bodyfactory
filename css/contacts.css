@@ -1,13 +1,13 @@
 .whereweare{
     
-    margin-top: 60px;
+    
     max-width: var(--width-basic);
-    margin-bottom: 120px;
+    margin-bottom: 70px;
 }
 
 @media screen and (max-width:764px) {
     .whereweare_block {
-            margin-top: 50px;
+            
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -24,7 +24,7 @@
 }
 .services_whereweare_text{
     text-align: start;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 50px;
     
     line-height: var(--line-height-text);
@@ -41,9 +41,9 @@
 
 @media screen and (min-width:1200px) {
     .services_whereweare_text {
-            text-align: start;
+            text-align: center;
            width: 70%;
-            margin-bottom: 50px;
+            margin-bottom: 35px;
     
             line-height: var(--line-height-text);
         }
@@ -55,14 +55,14 @@
 @media screen and (min-width:765px) {
     .contacts_howtogo {
             padding-top: 10px;
-            max-width: 55%;
+            width: 35%;
         }
 }
 .contacts_howtogo_list{
     padding-left: 50px;
 }
 .contacts_text{
-    font-size: 14px;
+    font-size: var(--text-basic);
     line-height: var(--line-height-text);
 }
 
@@ -71,8 +71,8 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-bottom: 120px;
-    margin-top: 120px;
+    margin-top: 45px;
+    margin-bottom: 50px;
 }
 @media screen and (max-width:1199px) {
     .contacts_map .contacts_map_frame {
@@ -85,7 +85,7 @@
     .contacts_map {
         max-width: var(--width-basic);
         text-align: center;
-        margin-bottom: 120px;
+        margin-bottom: 50px;
     }
 }
 .contacts_photo{
@@ -110,12 +110,12 @@
 .contacts_photo_item{
     object-fit: cover;
     max-width: 96%;
-    padding: 10px;
+    padding: 0 10px;
 }
 @media screen and (min-width:765px) {
 .contacts_photo_item {
         object-fit: cover;
         max-width: 50%;
-        padding: 20px;
+        padding: 0 20px;
     }
 }

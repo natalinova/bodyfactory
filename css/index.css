@@ -1,6 +1,6 @@
 .about_us{
-    padding-left: 10px;
     max-width: 1200px;
+    width: 96%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -10,6 +10,7 @@
 }
 @media screen and (min-width:765px) {
     .about_us {
+        
             max-width: 1200px;
             display: flex;
             margin-left: auto;
@@ -26,8 +27,8 @@
     flex-direction: column;
     justify-content: center;
     box-shadow: var(--shadow);
-    padding-left: 10px;
-    padding-right: 20px;
+    /* padding-left: 10px; */
+    padding-right: 10px;
 
 }
 @media screen and (min-width:765px) {
@@ -85,8 +86,8 @@ margin-left: 50px;
     justify-content: space-between;
     align-items: center;
     max-width: 715px;
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
 }
 @media screen and (min-width:765px) {
     .about_us_block_small {
@@ -118,14 +119,14 @@ margin-left: 50px;
         color: var(--dark-first);
         padding-left: 15px;
             font-size: 35px;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 }
 
 .about_us_title{
     width: 265px;
     font-size: 18px;
-    padding-left: 23px;
+    /* padding-left: 23px; */
     font-style:normal;
     /* text-align: center; */
     /* font-weight:bolder; */
@@ -167,12 +168,19 @@ margin-left: 50px;
 }
 /* стрілка */
 .about_us_container {
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    padding-right: 20px;
+    padding-right: 5px;
 }
+@media screen and (min-width:765px) {
+    .about_us_container{
+        padding-right: 20px;
+    }
+}
+
 .why_we {
     max-width: 1200px;
     margin-top: 255px;
@@ -180,6 +188,7 @@ margin-left: 50px;
     margin-right: 10px;
     height: 440px;
     margin-bottom: 300px;
+    /* padding-right: 20px; */
 
 }
 @media screen and (min-width:765px) {
@@ -196,18 +205,18 @@ margin-left: 50px;
 .why_we_image_first {
     box-shadow: 0px 123px 147px -45px rgba(0, 0, 0, 0.45);
     object-fit: cover;
-    /* position: absolute;
-    left:30px; */
+
     margin-top: 65px;
     margin-bottom: 100px;
     z-index: 3;
     position: relative;
-    /*top: 100px; */
+    
     
 
 }
 @media screen and (min-width:765px) and (max-width:1199px) {
     .why_we_image_first {
+            
             box-shadow: 0px 123px 147px -45px rgba(0, 0, 0, 0.45);
             object-fit: cover;
             margin-top: 65px;
@@ -219,6 +228,8 @@ margin-left: 50px;
 }
 @media screen and (min-width:1200px) {
     .why_we_image_first {
+        width: 200px;
+        height: 270px;
             box-shadow: 0px 123px 147px -45px rgba(0, 0, 0, 0.45);
             object-fit: cover;
             margin-top: 65px;
@@ -229,9 +240,8 @@ margin-left: 50px;
         }
 }
 .why_we_image_second {
-    margin-left: 135px;
-    /* position:relative;
-    left: 120px; */
+    margin-left: 130px;
+
     object-fit: cover;
     z-index: 0;
      position: absolute;
@@ -253,6 +263,8 @@ margin-left: 50px;
 
 @media screen and (min-width:1200px) {
     .why_we_image_second {
+        width: 275px;
+            height: 485px;
             margin-left: 335px;
             /* position:relative;
         left: 120px; */
@@ -290,7 +302,7 @@ margin-left: 50px;
 .why_we_title {
        
         position: relative;
-        left: 540px;
+        left: 570px;
         top: -415px;
         font-size: 35px;
         max-width: 320px;
@@ -325,7 +337,7 @@ margin-left: 50px;
 
 @media screen and (min-width:1200px) {
 .why_we_text {
-        font-size: 12px;
+        font-size: var(--text-basic);
         line-height: 1.8;
         position: relative;
         max-width: 300px;
@@ -336,7 +348,7 @@ margin-left: 50px;
     }
 }
 .why_we_link{
-    font-size: 10px;
+    font-size: 12px;
     position: relative;
     color: var(--dark-first);
     left: 30px;
@@ -345,7 +357,7 @@ margin-left: 50px;
 }
 @media screen and (min-width:765px) and (max-width:1199px) {
     .why_we_link {
-            font-size: 10px;
+            font-size: 12px;
             position: relative;
             color: var(--dark-first);
             left: 530px;
@@ -355,7 +367,7 @@ margin-left: 50px;
 }
 @media screen and (min-width:1200px) {
     .why_we_link {
-            font-size: 10px;
+            font-size: 12px;
             position: relative;
             color: var(--dark-first);
             left: 660px;
@@ -385,19 +397,26 @@ margin-left: 50px;
 }
 .onetwothree_item{
     margin-top: 30px;
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 96%;
+    padding-left: 0px;
+    padding-right: 0px;
 
     /* text-align: center; */
 }
+
+
 @media screen and (min-width:765px) {
     .onetwothree_item {
             width: 33.3%;
             margin: 0 10px;
+            padding-left: 10px;
+                padding-right: 10px;
+            
+                /* text-align: center; */
+            }
             /* text-align: center; */
         }
-}
+
 .onetwothree_number--text{
     font-size: 70px;
     text-align: center;
@@ -433,7 +452,7 @@ margin-left: 50px;
 }
 .onetwothree_text--content{
     text-align: justify;
-font-size: 12px;
+font-size: var(--text-basic);
     line-height: var(--line-height-text);
 }
 
@@ -530,7 +549,7 @@ font-size: 12px;
  .contact_us_block{
     max-width: 450px;
         margin-left: 50%;
-        height: 550px;
+        height: 600px;
         justify-content:center;
     
         background-color: transparent;
@@ -570,7 +589,7 @@ font-size: 12px;
  .contact_us_text {
      padding-left: 30px;
      padding-right: 30px;
-     font-size: 14px;
+     font-size: var(--text-basic);
      line-height: 1.8;
      margin: 20px 0;
 
@@ -590,16 +609,42 @@ font-size: 12px;
  }
 
  .contact_list_price_name,
- .contact_list_price_number {
-     font-size: 14px;
+ .contact_list_price_number, .contact_list_price_time {
+     font-size: var(--text-basic);
      line-height: 1.4;
      font-style: italic;
  }
+.contact_list_price_name{
+width: 70%;
+}
+@media screen and (min-width:765px) {
+    .contact_list_price_name{
+        width: 60%;
+    }
+}
+.contact_list_price_time {
+    display: none;
+}
 
+@media screen and (min-width:765px) {
+    .contact_list_price_time {
+        display: block;
+        width: 20%;
+        text-align: center;
+    }
+}
+.contact_list_price_number {
+    width: 20%;
+    text-align:center;
+}
 
+@media screen and (min-width:765px) {
+    .contact_list_price_number {
+        width: 30%;
+    }
+}
  .contact_us_button {
      width: 200px;
-     margin-bottom: 15px;
      height: 60px;
      border-radius: 20px;
      background-color: #b8bbbb;

@@ -12,10 +12,27 @@
     /* margin-left: 20px; */
     border-radius: 50%;
 }
+@media screen and (min-width:765px) and (max-width:1199px) {
+    .logo_img {
+            height: 60px;
+            width: 60px;
+            margin-right: 5px;
+            /* margin-left: 20px; */
+            border-radius: 50%;
+        }
+}
 .header_menu_burger{
     display: flex;
     align-items:center;
     padding-bottom: 10px;
+}
+@media screen and (min-width:765px) and (max-width:1199px) {
+    .header_menu_burger {
+        /* width: 475px; */
+            display: flex;
+            align-items: center;
+            padding-bottom: 10px;
+        }
 }
 /* .head_test {
     width: 100vw;
@@ -53,6 +70,7 @@
     /*   menu */
 }
 .navbar {
+   
     display: flex;
     margin-top: 10px;
     vertical-align: center;
@@ -69,30 +87,86 @@
     font-weight: 700;
     color: var(--dark-first);
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 10px;
     text-decoration: none;
 }
-
+@media screen and (min-width:1200px) {
+    .navbar a {
+            float: left;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--dark-first);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+}
 .dropdown {
+    /* width: 124px; */
     float: left;
     overflow: hidden;
 }
 
 .dropdown .dropbtn {
+    
     cursor: pointer;
     font-size: 12px;
     font-weight: 700;
     border: none;
     outline: none;
     color: var(--light-second);
-    padding: 14px 16px;
+    padding: 14px 10px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
     color: var(--dark-first);
     
 }
+@media screen and (min-width:765px) and (max-width:1199px) {
+    .dropdown .dropbtn {
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 700;
+            border: none;
+            outline: none;
+            color: var(--light-second);
+            padding: 14px 10px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            color: var(--dark-first);
+    
+        }
+}
+
+@media screen and (min-width:1200px)  {
+    .dropdown .dropbtn {
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 700;
+        border: none;
+        outline: none;
+        color: var(--light-second);
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        color: var(--dark-first);
+
+    }
+}
+
+/* .dropbtn {
+    width: auto;
+}
+@media screen and (min-width:765px) and (max-width:1199px) {
+.dropbtn {
+        width: 130px;
+    }
+} */
+
 .dropdown {
+    /* width: 124px; */
     font-size: 16px;
 }
 .navbar a:hover,
@@ -356,20 +430,40 @@ li {
   margin-left: -2em;
   margin-top: -45px;
   width: 2em;
-  height: 45px;
+  height: 32px;
+   /* 45px */
   z-index: 5;
 }
 
 .hamburger div {
   position: relative;
-  width: 3em;
-  height: 5px;
+  width: 2.2em;
+  height: 3px;
   border-radius: 3px;
   background-color: var(--dark-first);
   margin-top: 8px;
   transition: all 0.3s ease-in-out;
 }
+ /* hamburger {
+    margin-right: 20px;
+    position: absolute;
+    top: 5em;
+    right: 5%;
+    margin-left: -2em;
+    margin-top: -45px;
+    width: 2em;
+    height: 45px;
+    z-index: 5;
+}
 
+.hamburger div {
+    position: relative;
+    width: 3em;
+    height: 5px;
+    border-radius: 3px;
+    background-color: var(--dark-first);
+    margin-top: 8px;
+    transition: all 0.3s ease-in-out; */
 /**
 Nav Styles
 **/
@@ -428,9 +522,25 @@ nav a:hover:before {
 /**
 Animations
 **/
+/* toggle:checked+.hamburger .top-bun {
+    transform: rotate(-45deg);
+    margin-top: 25px;
+}
+
+#toggle:checked+.hamburger .bottom-bun {
+    opacity: 0;
+    transform: rotate(45deg);
+}
+
+#toggle:checked+.hamburger .meat {
+    transform: rotate(45deg);
+    margin-top: -7px;
+} */
+
 #toggle:checked + .hamburger .top-bun {
   transform: rotate(-45deg);
-  margin-top: 25px;
+  left: 0;
+  margin-top: 23px;
 }
 #toggle:checked + .hamburger .bottom-bun {
   opacity: 0;
@@ -438,7 +548,7 @@ Animations
 }
 #toggle:checked + .hamburger .meat {
   transform: rotate(45deg);
-  margin-top: -7px;
+  margin-top: -4px;
 }
 
 #toggle:checked + .hamburger + .nav {

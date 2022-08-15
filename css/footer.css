@@ -12,7 +12,8 @@
 @media screen and (min-width:765px) {
 .footer {
         display: flex;
-        max-width: 1200px;
+        
+        width: 96%;
         flex-direction: row ;
         justify-content: space-between;
         align-items: flex-start;
@@ -86,6 +87,7 @@ width: 100%;
     }
 }
 .footer_name{
+    /* width: 200px; */
     display: block;
     padding-top: 15px;
     padding-left: 0px;
@@ -94,8 +96,9 @@ width: 100%;
     font-weight: bold;
     font-size: 31.5;
 }
-@media screen and (min-width:765px) {
+@media screen and (min-width:765px) and (max-width:1199px){
     .footer_name {
+        /* width: 190px; */
         padding-left: 0;
         padding-top: 0;
         text-align: center;
@@ -116,6 +119,7 @@ width: 100%;
 
 @media screen and (min-width:765px) {
     .footer_name_add {
+        width: 200px;
         padding-left: 0;
         padding-top: 0;
         text-align: center;
@@ -148,8 +152,8 @@ width: 100%;
     width: 92%;
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 @media screen and (min-width:765px) and (max-width:1199px) {
     .footer_about {
@@ -220,21 +224,23 @@ width: 100%;
 }
 .footer_reference{
     padding-left: 50px;
+    display: flex;
+    align-items: center;
 height: 42px;
-font-size: 14px;
+font-size: var(--text-basic);
 }
 .footer_text{
     padding-top: 10px;
     margin: 0;
     width: 100%;
-    font-size: 14px;
+    font-size: var(--text-basic);
     line-height: 2.7;
 }
 
 .contacts_references_link {
     
     color: var(--dark-second);
-    font-size: 14px;
+    font-size: var(--text-basic);
     line-height: 1.5;
 }
 
@@ -246,7 +252,7 @@ font-size: 14px;
 .contacts_references_link--new {
 
     color: var(--dark-second);
-    font-size: 14px;
+    font-size: var(--text-basic);
     line-height: 2.8;
 }
 
@@ -271,7 +277,7 @@ padding-top: 10px;
 .contacts_adress_item {
     line-height: 1.7;
     color: var(--dark-second);
-    font-size: 14px;
+    font-size: var(--text-basic);
 }
 
 .contacts_adress_item:hover,
@@ -291,7 +297,7 @@ padding-top: 10px;
 }
 .contacts_title_soc {
             padding-left: 50px;
-            font-size: 14px;
+            font-size: var(--text-basic);
             color: var(--dark-first)
         
 }
