@@ -101,6 +101,9 @@ html {
     }
 }
 
+.padding_50{
+    padding-left: 50px;
+}
  /* FONTS */
 @font-face {
     font-family: 'Gilroy';

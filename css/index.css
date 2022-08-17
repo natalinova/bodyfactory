@@ -457,28 +457,17 @@ font-size: var(--text-basic);
 }
 
  /* CALL TO ACTIONS */
- /* .cta{
-    background: linear-gradient(90deg,
-            rgba(215, 215, 217, 1) 5%,
-            rgba(215, 215, 217, 0) 100%),
-            linear-gradient(270deg, rgba(215, 215, 217, 1) 60%, rgba(215, 215, 217, 0) 100%),
-             url(../images/cta_31.jpg);
-        background-repeat: no-repeat;
-        background-size: 50%, auto, auto 600px; 
-        background-position: 0, 0, 15%;
 
- } */
  @media screen and (max-width:764px) {
 
     .cta {
             background: linear-gradient(90deg,
                     rgba(215, 215, 217, 1) 5%,
                     rgba(215, 215, 217, 0) 90%),
-                linear-gradient(270deg, rgba(215, 215, 217, 1) 60%, rgba(215, 215, 217, 0) 100%),
-                url(../images/cta_31.jpg);
+                linear-gradient(270deg, rgba(215, 215, 217, 1) 60%, rgba(215, 215, 217, 0) 100%);
             background-repeat: no-repeat;
-            background-size: 50%, auto, auto 600px;
-            background-position: 0, 0, 15%;
+            background-size: 50%, auto;
+            background-position: 0, 0;
     
         }
  }

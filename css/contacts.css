@@ -65,6 +65,20 @@
     font-size: var(--text-basic);
     line-height: var(--line-height-text);
 }
+.contacts {
+
+    width: 96%;
+    justify-content: start;
+}
+
+@media screen and (min-width:765px) {
+    .contacts {
+        padding-top: 10px;
+        width: 29.3%;
+        justify-content: start;
+    }
+}
+
 
 .contacts_google{
     max-width: var(--width-basic);
