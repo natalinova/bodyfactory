@@ -5,59 +5,630 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BodyFactory</title>
+    <title>Прайс. Body Factory</title>
+    <meta name="description" content="Прайс. BODY FACTORY.">
+    <meta name="keywords"
+        content="студія bodyfactory, body factory львів, bodyfactory львів, масаж, професійний масаж, масаж корекція фігури, ідеальна фігура без спортзалу">
+    <link rel="icon" type="image/png" sizes="45x45" href="./images/IMG_2380.PNG">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Montserrat+Alternates:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600&family=Montserrat+Alternates:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/about_us.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/hero.css">
-    <link rel="stylesheet" href="./css/contact_us.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/contacts.css">
     <link rel="stylesheet" href="./css/price.css">
-    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-70KLJ4H4Z6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-70KLJ4H4Z6');
+    </script>
+    <!-- Google tag (gtag.js) -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '5772610192751172');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=5772610192751172&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
 </head>
 
 <body>
+<header class="head">
+    <div class="head_full">
+        <div class="logo">
+            <a href="./index.html"> <img class="logo_img" src="./images/BF_logo_120_120.png" alt="" width="60"
+                    height="60"></a>
+            <h2 class="footer_name">BODY FACTORY</h2>
+        </div>
 
-<section class="price_menu">
+
+        <div class="header_menu_burger">
+            <div class="navbar">
+                <a href="./index.html">ГОЛОВНА</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn"> НАШІ ПОСЛУГИ
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="./corection.html">Корекція фігури</a>
+                        <a href="./face.html">Естетика тіла та обличчя</a>
+                        <a href="./health.html">Лікування та оздоровлення</a>
+                        <a href="./relax.html">Релакс</a>
+                    </div>
+                </div>
+                <a class="active" href="https://b357533.alteg.io/company/341190/select-services?o=m1291727s7472337,7286689,7765266"
+                    target="_blank">ПРАЙС</a>
+                <a href="./contacts.html">КОНТАКТИ</a>
+
+            </div>
+            <ul class="socials_header">
+                <li class="socials__item"><a class="socials__link" href="https://www.instagram.com/bodyfactory.ua/"
+                        target="_blank"> <svg class="socials__icon">
+                            <use href="./images/icons.svg#instagram"></use>
+                        </svg>
+                    </a></li>
+
+                <li class="socials__item"> <a class="socials__link " href="https://www.facebook.com/bodyfactory.ua/"
+                        target="_blank"> <svg class="socials__icon">
+                            <use class="socials__icon" href="./images/icons.svg#facebook"></use>
+                        </svg></a></li>
+                <li class="socials__item social_additional"> <a class="socials__link"
+                        href="https://youtube.com/channel/UCR7nMLFf0vegyA0z3Jz3FsQ" target="_blank">
+                        <svg class="socials__icon">
+                            <use href="./images/icons.svg#icon-youtube"></use>
+                        </svg></a></li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- меню бургер -->
+    <div class="burger_menu">
+        <input id="toggle" type="checkbox">
+
+        <label for="toggle" class="hamburger">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+        </label>
+
+        <div class="nav">
+            <div class="nav-wrapper">
+                <nav>
+                    <a href="./corection.html">Корекція фігури</a><br>
+                    <a href="./face.html">Естетика тіла та обличчя</a><br>
+                    <a href="./health.html">Лікування та оздоровлення</a><br>
+                    <a href="./relax.html">Релакс</a><br>
+                    <a href="./contacts.html">Контакти</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</header>
+
+<!-- <section class="services_hero margin_auto">
+    <h1 class="services_h1_title margin_auto"> Здорове тіло без зайвих фінансових витрат</h1>
+
+    <p class="services_after_h2 margin_auto">Lorem ipsum dolor sit aLorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti saepe tempora itaque placeat quas, voluptates debitis molestias corrupti voluptate rem possimus, ratione officia ab molestiae velit vel a enim quasi. </p>
+    <div class="services_hero_img_block margin_auto">
+        <img class="price_hero_img margin_auto" src="./images/71.jpeg" >
+    </div>
+
+</section> -->
+<section class="price_menu margin_auto">
 <!--  меню для прайса -->
-<button class="accordeon">Естетика</button>
-<div class="panel">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio expedita perspiciatis est architecto dignissimos corporis, provident aliquam, beatae non asperiores maxime porro animi fugit laboriosam aperiam voluptatum! Perferendis, quis distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magni qui tempore amet esse laborum quibusdam iusto optio a natus laboriosam nisi enim est quos, labore odio explicabo? Et, blanditiis.</p>
+<button class="accordeon">
+    <div class="price_item"> 
+        <p class="price_title">Корекція фігури</p>
+        <p class="price_title_text--first"> Lorem, ipsum dolor sit adipisicing elit. Culpa dolorem quam voluptates velit soluta, temporibus commodi ut dolorum quia enim repellat corrupti laudantium, vitae accusantium. Reprehenderit magni earum tenetur in.</p>
+        <p class="plus_symbol active_symbol">&#10133</p>
+        <p class="minus_symbol ">&#10134</p>
+
+
 </div>
 
-<button class="accordeon">Корекція</button>
-<div class="panel">
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro eos voluptatum nihil aperiam quibusdam at iure dignissimos magnam accusantium, laborum incidunt saepe eveniet necessitatibus repellendus quasi perspiciatis amet adipisci voluptas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim distinctio corrupti exercitationem harum quo ad esse id adipisci et fugit repellat, architecto placeat quis consequuntur nobis deleniti obcaecati odio quasi.</p>
+        
+
+   </button>
+<div class="panelFirst">
+    <!-- <h2 class="price_block_title margin_auto"> Корекція фігури </h2> -->
+    
+    <table class="services_price margin_auto">
+        <thead>
+            <tr class="table_title--price">
+                <th class="table_first_column">Вид послуги </th>
+                <th class="table_second_column"> Тривалість, хв</th>
+                <th class="table_third_column"> Вартість, грн.</th>
+            </tr>
+        </thead>
+        <tbody>
+    
+            <tr>
+                <td class="table_first_column">Корекція фігури "Експрес"</td>
+                <td class="table_second_column">60</td>
+                <td class="table_third_column">650</td>
+            </tr>
+            <tr>
+                <td class="table_first_column">Корекція фігури "Основна"</td>
+                <td class="table_second_column">60</td>
+                <td class="table_third_column">640</td>
+            </tr>
+            <tr>
+                <td class="table_first_column">Корекція фігури "Індивідуальна"</td>
+                <td class="table_second_column">60</td>
+                <td class="table_third_column">700</td>
+            </tr>
+            <tr>
+                <td class="table_first_column">Антицелюлітний </td>
+                <td class="table_second_column">60</td>
+                <td class="table_third_column">550</td>
+            </tr>
+            <tr>
+                <td class="table_first_column">Профілактичний масаж</td>
+                <td class="table_second_column">60</td>
+                <td class="table_third_column">550</td>
+            </tr>
+            <tr>
+                <td class="table_first_column">Корекція рук (додаток до корекції фігури)</td>
+                <td class="table_second_column">30</td>
+                <td class="table_third_column">350</td>
+            </tr>
+            <tr>
+                <td class="table_first_column">Збільшення часу сеансу </td>
+                <td class="table_second_column"> 30</td>
+                <td class="table_third_column"> 300</td>
+            </tr>
+            <tr>
+                <td class="table_first_column"> Накачаємо сідниці</td>
+                <td class="table_second_column">30</td>
+                <td class="table_third_column"> 420</td>
+            </tr>
+            <tr>
+                <td class="table_first_column"> Корекція талії</td>
+                <td class="table_second_column">30</td>
+                <td class="table_third_column"> 400</td>
+            </tr>
+            <tr>
+                <td class="table_first_column">Сідниці + талія</td>
+                <td class="table_second_column">60</td>
+                <td class="table_third_column">650</td>
+            </tr>
+        </tbody>
+    </table>
+
 </div>
 
-<button class="accordeon">Лікування</button>
+<button class="accordeon ">
+    <div class="price_item">
+        <p class="price_title">Естетика тіла та обличчя</p>
+        <p class="price_title_text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa dolorem quam
+            voluptates velit soluta, tia enim repellat corrupti laudantium, vitae
+            accusantium. Reprehenderit magni earum tenetur in.</p>
+        <p class="plus_symbol">&#10133</p>
+        <p class="minus_symbol active_symbol">&#10134</p>
+
+
+    </div>
+
+
+
+</button>
 <div class="panel">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos corrupti in placeat error magnam, itaque ipsum voluptatum quaerat harum sunt vitae esse totam maiores saepe molestiae tempora laborum labore facere! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, harum molestiae, officiis tenetur, accusamus soluta sed optio quod suscipit obcaecati ea delectus est aspernatur. Ab voluptas impedit quae ratione labore.</p>
+    <!-- <h2 class="price_block_title margin_auto"> Естетика тіла та обличчя</h2> -->
+<table class="services_price margin_auto">
+    <thead>
+        <tr class="table_title--price">
+            <th class="table_first_column">Вид послуги </th>
+            <th class="table_second_column"> Тривалість, хв</th>
+            <th class="table_third_column"> Вартість, грн.</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="table_first_column">Лімфодренажний масаж</td>
+            <td class="table_second_column">60</td>
+            <td class="table_third_column">700</td>
+        </tr>
+        <tr>
+            <td class="table_first_column">Зволожуючий масаж кремом (dr. Spiller)</td>
+            <td class="table_second_column">60</td>
+            <td class="table_third_column">730</td>
+        </tr>
+        <tr>
+            <td class="table_first_column">Медове тонізування шкіри"</td>
+            <td class="table_second_column">60</td>
+            <td class="table_third_column">700</td>
+        </tr>
+        <tr>
+            <td class="table_first_column">Медовий на одну зону</td>
+            <td class="table_second_column">30</td>
+            <td class="table_third_column">500</td>
+        </tr>
+        <tr>
+            <td class="table_first_column">Доглядовий масаж обличчя </td>
+            <td class="table_second_column">30</td>
+            <td class="table_third_column">400</td>
+        </tr>
+        <tr>
+            <td class="table_first_column">Збільшення часу сеансу</td>
+            <td class="table_second_column">30</td>
+            <td class="table_third_column">300</td>
+        </tr>
+        <tr>
+            <td class="table_first_column">Глибока дегідратація</td>
+            <td class="table_second_column">150</td>
+            <td class="table_third_column">1500</td>
+        </tr>
+        <tr>
+            <td class="table_first_column">Лімфодренажне обгортання</td>
+            <td class="table_second_column"> 90</td>
+            <td class="table_third_column"> 1000</td>
+        </tr>
+        <tr>
+            <td class="table_first_column"> Спортивний + ефект залу</td>
+            <td class="table_second_column">60</td>
+            <td class="table_third_column"> 700</td>
+        </tr>
+        <tr>
+            <td class="table_first_column"> Масаж для втомлених ніг</td>
+            <td class="table_second_column">40</td>
+            <td class="table_third_column"> 500</td>
+        </tr>
+        <tr>
+            <td class="table_first_column">Масажний крем dr. Spiller на все тіло</td>
+            <td class="table_second_column">--</td>
+            <td class="table_third_column">100</td>
+        </tr>
+        <tr>
+            <td class="table_first_column">Масажний крем dr. Spiller на одну зону</td>
+            <td class="table_second_column"> -- </td>
+            <td class="table_third_column">50</td>
+        </tr>
+    </tbody>
+</table>
 </div>
-<button class="accordeon">Релакс</button>
+
+<button class="accordeon ">
+    <div class="price_item">
+        <p class="price_title">Лікування та оздоровлення</p>
+        <p class="price_title_text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa dolorem quam
+            voluptates velit soluta, ia enim repellat corrupti laudantium, vitae
+            accusantium. Reprehenderit magni earum tenetur in.</p>
+        <p class="plus_symbol">&#10133</p>
+        <p class="minus_symbol active_symbol">&#10134</p>
+
+
+    </div>
+</button>
 <div class="panel">
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, ipsa! Cum dolorem perferendis magnam rem numquam? Id quod in, necessitatibus delectus esse, ipsa, blanditiis ipsam suscipit quia maxime deserunt laudantium? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, magnam odit repellat pariatur beatae saepe sapiente. Ut, recusandae dolorum? Nesciunt quod distinctio, omnis cupiditate soluta numquam quis vel. Ipsum, veritatis.</Label></p>
+<!-- <h2 class="price_block_title margin_auto"> Лікування та оздоровлення</h2> -->
+
+<table class="services_price margin_auto">
+    <thead>
+        <tr class="table_title--price">
+            <th class="table_first_column">Вид послуги </th>
+            <th class="table_second_column"> Тривалість, хв</th>
+            <th class="table_third_column"> Вартість, грн.</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td class="table_first_column">Шийно-комірцева зона</td>
+            <td class="table_second_column">30</td>
+            <td class="table_third_column">375</td>
+        </tr>
+        <tr>
+            <td class="table_first_column"> Оздоровчий масаж спини</td>
+            <td class="table_second_column">40</td>
+            <td class="table_third_column">440</td>
+        </tr>
+        <tr>
+            <td class="table_first_column">Лікувальний масаж спини</td>
+            <td class="table_second_column">45</td>
+            <td class="table_third_column">475</td>
+        </tr>
+        <tr>
+            <td class="table_first_column">Загальний оздоровчий масаж</td>
+            <td class="table_second_column">60</td>
+            <td class="table_third_column">675</td>
+        </tr>
+        <tr>
+            <td class="table_first_column">Масаж м'язове відновлення</td>
+            <td class="table_second_column">60</td>
+            <td class="table_third_column">650</td>
+        </tr>
+        <tr>
+            <td class="table_first_column">Лікувальний стегна</td>
+            <td class="table_second_column">30</td>
+            <td class="table_third_column">375</td>
+        </tr>
+        <tr>
+            <td class="table_first_column">Лікувальний рук</td>
+            <td class="table_second_column"> 30</td>
+            <td class="table_third_column"> 375</td>
+        </tr>
+        <tr>
+            <td class="table_first_column"> Вакуумний лікувальний спини</td>
+            <td class="table_second_column">45</td>
+            <td class="table_third_column"> 500</td>
+        </tr>
+        <tr>
+            <td class="table_first_column"> Оздоровчий комплекс</td>
+            <td class="table_second_column">60</td>
+            <td class="table_third_column"> 700</td>
+        </tr>
+
+    </tbody>
+</table>
+</div>
+<button class="accordeon ">
+    <div class="price_item">
+        <p class="price_title">Релакс</p>
+        <p class="price_title_text"> Lorem, ipsum dolor s consectetur adipisicing elit. Culpa dolorem quam
+            voluptates velidi ut dolorum at corrupti laudantium, vitae
+            accusantium. Reprehenderit magni earum tenetur in.</p>
+        <p class="plus_symbol">&#10133</p>
+        <p class="minus_symbol active_symbol">&#10134</p>
+
+
+    </div>
+</button>
+<div class="panel">
+    <!-- <h2 class="price_block_title margin_auto"> Релакс </h2> -->
+    
+    <table class="services_price margin_auto">
+        <thead>
+            <tr class="table_title--price">
+                <th class="table_first_column">Вид послуги </th>
+                <th class="table_second_column"> Тривалість, хв</th>
+                <th class="table_third_column"> Вартість, грн.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="table_first_column">Масаж аромасвічками</td>
+                <td class="table_second_column">60</td>
+                <td class="table_third_column">900</td>
+            </tr>
+            <tr>
+                <td class="table_first_column">Аромамасаж</td>
+                <td class="table_second_column">60</td>
+                <td class="table_third_column">1000</td>
+            </tr>
+            <tr>
+                <td class="table_first_column"> Розслабляючий масаж + ароматерапія</td>
+                <td class="table_second_column">60</td>
+                <td class="table_third_column">850</td>
+            </tr>
+            <tr>
+                <td class="table_first_column">Розслабляючий масаж</td>
+                <td class="table_second_column">75</td>
+                <td class="table_third_column">700</td>
+            </tr>
+            <tr>
+                <td class="table_first_column">Масаж гарячим камінням</td>
+                <td class="table_second_column">60</td>
+                <td class="table_third_column">1200</td>
+            </tr>
+            <tr>
+                <td class="table_first_column">Пілінг тіла "Гідратація"</td>
+                <td class="table_second_column">50</td>
+                <td class="table_third_column">650</td>
+            </tr>
+            <tr>
+                <td class="table_first_column">Молочний пілінг тіла</td>
+                <td class="table_second_column">50</td>
+                <td class="table_third_column">600</td>
+            </tr>
+            <tr>
+                <td class="table_first_column">Ароматерапія</td>
+                <td class="table_second_column"> --</td>
+                <td class="table_third_column"> 150</td>
+            </tr>
+            <tr>
+                <td class="table_first_column"> Ефірні масла </td>
+                <td class="table_second_column">--</td>
+                <td class="table_third_column"> 100</td>
+            </tr>
+            <tr>
+                <td class="table_first_column"> Розслабляючий комплекс</td>
+                <td class="table_second_column">85</td>
+                <td class="table_third_column"> 1000</td>
+            </tr>
+    
+        </tbody>
+    </table>
+</div>
+</section>
+<section class="cta">
+    <img class="cta_background" src="./images/17_1.jpg" alt="">
+    <img class="cta_background_tablet" src="./images/17_tablet.jpg" alt="">
+    <img class="cta_background_small_tablet" src="./images/17_without_blur.jpg" alt="">
+    <!-- <div class="cta_block"> -->
+
+    <div class="contact_us_block">
+        <h2 class="contact_us_title ">
+            Запишіться на масаж вже зараз
+        </h2>
+        <p class="contact_us_text">
+            Онлайн-запис на масаж допоможе вибрати зручний для вас час, послугу та спеціаліста, а також відкриває доступ
+            до єдиного місця, де передбачені спеціальні ціни.
+        </p>
+        <div class="contact_list_price">
+
+            <div class="price_list_block">
+                <p class="contact_list_price_name">Антицелюлітний масаж</p>
+                <p class="contact_list_price_time"> 60 хв</p>
+                <p class="contact_list_price_number">650 грн.</p>
+            </div>
+
+            <div class="short_line"></div>
+
+            <div class="price_list_block">
+                <p class="contact_list_price_name">Лімфодренажне обгортання</p>
+                <p class="contact_list_price_time"> 90 хв</p>
+                <p class="contact_list_price_number">1000 грн.</p>
+            </div>
+
+            <div class="short_line"></div>
+
+            <div class="price_list_block">
+                <p class="contact_list_price_name">Масаж м'язове відновлення</p>
+                <p class="contact_list_price_time"> 60 хв</p>
+                <p class="contact_list_price_number">650 грн.</p>
+            </div>
+
+            <div class="short_line"></div>
+
+            <div class="price_list_block">
+                <p class="contact_list_price_name">Масаж аромасвічками</p>
+                <p class="contact_list_price_time"> 60 хв</p>
+                <p class="contact_list_price_number">900 грн.</p>
+            </div>
+
+            <div class="short_line"></div>
+        </div>
+        <a class="contact_us_button"
+            href="https://b357533.alteg.io/company/341190/select-services?o=m1291727s7472337,7286689,7765266"
+            target="_blank">
+            <p>Записатися</p>
+        </a>
+    </div>
+
+    <!-- </div> -->
+
 </section>
 
+<!-- BUTTON ON TOP -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<!-- FOOTER  -->
+<include src="./partials/footer.html"></include>
+
+<footer>
+    <div class="footer margin_auto">
+        <div class="footer_item--bf margin_auto">
+            <div class="footer_logo_name">
+
+                <img class="footer_logo_png" src="./images/BF_logo_120_120.png" alt="">
+
+
+                <h2 class="footer_name_add">BODY FACTORY</h2>
+
+            </div>
+        </div>
+        <div class="footer_item footer_item--second margin_auto">
+            <h3 class="contacts_title font-title"> НAШІ ПОСЛУГИ</h3>
+        </div>
+        <div class="footer_item footer_item--third margin_auto">
+            <h3 class="contacts_title font-title"> НАША АДРЕСА</h3>
+        </div>
+        <div class="footer_item footer_item--four margin_auto">
+            <p class="footer_text">
+                Студія з персональним інноваційним підходом до клієнтів. Ми створюємо комфорт, позбавляємо проблем,
+                надихаємо та відновлюємо вас на тижні вперед.
+            </p>
+        </div>
+
+        <div class="footer_item footer_item--five margin_auto">
+            <a class="contacts_references_link" href="./corection.html"> Корекція фігури</a> </br>
+            <a class="contacts_references_link" href="./face.html">Естетика тіла та обличчя</a> </br>
+            <a class="contacts_references_link" href="./health.html">Лікування та оздоровлення</a></br>
+            <a class="contacts_references_link" href="./relax.html">Релакс</a>
+        </div>
+
+        <div class="footer_item footer_item--six  margin_auto">
+            <a class="contacts_adress_item" href="https://goo.gl/maps/FwnA2U8h5pGoPJsg6" target="_blank"
+                rel="noreferrer noopener">
+                м. Львів, площа Князя Святослава, 5
+            </a>
+            </br>
+            <a class="contacts_adress_item" href="tel:+380991111111">
+                +38 096 918 90 89
+            </a>
+
+            <div class="contacts_socials">
+                <h3 class="contacts_title_soc">МИ В СОЦМЕРЕЖАХ:</h3>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.instagram.com/bodyfactory.ua/" target="_blank">
+                            <svg class="socials__icon">
+                                <use href="./images/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="socials__item">
+                        <a class="socials__link" href="https://www.facebook.com/bodyfactory.ua/" target="_blank">
+                            <svg class="socials__icon">
+                                <use href="./images/icons.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="socials__item social_additional">
+                        <a class="socials__link" href="https://www.youtube.com/channel/UCR7nMLFf0vegyA0z3Jz3FsQ"
+                            target="_blank">
+                            <svg class="socials__icon">
+                                <use href="./images/icons.svg#icon-youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_copyright">
+        <p> Supported by <a href="https://maxsa.com.ua/" target="_blank" style="text-decoration: none;">Maxsa, 2022</a>
+        </p>
+        <p>Body Factory &#169 2022</p>
+    </div>
+
+</footer>
+<script src="./js/scroll_button.js"></script>
 <script src="./js/menu_price.js"></script>
 </body>
 </html>

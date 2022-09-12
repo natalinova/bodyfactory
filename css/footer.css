@@ -242,7 +242,6 @@ justify-content: center;
     margin-bottom: 20px;
     font-size: 16px;
     color: var(--dark-first);
-    /* padding-left: 50px; */
     font-weight: bold;
 }
 .contacts_title_page {
@@ -260,7 +259,6 @@ justify-content: center;
 
 @media screen and (min-width:765px) {
     .footer_logo_png {
-        /* margin-left: -40px; */
         width: 60px;
         height: 60px;
     }

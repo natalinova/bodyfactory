@@ -124,7 +124,8 @@
 .contacts_photo_item{
     object-fit: cover;
     max-width: 96%;
-    padding: 0 10px;
+    margin-bottom: 20px;
+    
 }
 @media screen and (min-width:765px) {
 .contacts_photo_item {

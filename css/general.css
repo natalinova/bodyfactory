@@ -1,16 +1,16 @@
 :root {
 /*
-first - green
+first - grey
 second -grey
 third - yellow
 */
---dark-first: #35592D;
+--dark-first: #4c4c4d;
 --most-light-second:#d7d7d9;
 --dark-second: #737372;
 --light-second: #BDBAB8;
 --dark-third:#d88d02;
 --middle-third:#f8bf00;
---light-first: RGBA(107, 135, 8, 0.11);
+--light-first: #e7e7e7;
 --middle-first:RGBA(107, 135, 8, 0.41);
 --time: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 --shadow:0px 0px 70px -50px rgba(0, 0, 0, 0.4);
@@ -19,7 +19,6 @@ third - yellow
 --text-basic:14px;
 }
 body {
-    /* font-family: 'Montserrat Alternates', sans-serif; */
     font-family: 'Evolventa', sans-serif;
     color: var(--dark-second);
     background-color: var(--light-first);
@@ -105,115 +104,41 @@ html {
     padding-left: 50px;
 }
  /* FONTS */
-@font-face {
-    font-family: 'Gilroy';
-    src: local('Gilroy Regular'), local('Gilroy-Regular'),
-        url('../fonts/Gilroy-Regular.woff2') format('woff2'),
-        url('../fonts/Gilroy-Regular.woff') format('woff'),
-        url('../fonts/Gilroy-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: local('Gilroy Ultra Light'), local('Gilroy-Ultra-Light'),
-        url('../fonts/Gilroy-UltraLight.woff2') format('woff2'),
-        url('../fonts/Gilroy-UltraLight.woff') format('woff'),
-        url('../fonts/Gilroy-UltraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
-        url('../fonts/Gilroy-Extrabold.woff2') format('woff2'),
-        url('../fonts/Gilroy-Extrabold.woff') format('woff'),
-        url('../fonts/Gilroy-Extrabold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: local('Gilroy Medium'), local('Gilroy-Medium'),
-        url('../fonts/Gilroy-Medium.woff2') format('woff2'),
-        url('../fonts/Gilroy-Medium.woff') format('woff'),
-        url('../fonts/Gilroy-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GropledBold';
-    src: local('GropledBold'), local('GropledBold'),
-        url('../fonts/Gropled-Bold.otf') format('truetype');
-    font-weight: 700;
-    font-style: bold;
-}
 
 /*  директиви для шрифтів BF*/
 @font-face {
     font-family: 'Evolventa';
     src: local('Evolventa-Bold'), local('Evolventa-Bold'),
-        url('../fonts/bf/Evolventa-Bold.ttf') format('truetype');
+        url('../fonts/Evolventa-Bold.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Evolventa';
     src: local('Evolventa-BoldObligue'), local('Evolventa-BoldObligue'),
-        url('../fonts/bf/Evolventa-BoldOblique.ttf') format('truetype');
+        url('../fonts/Evolventa-BoldOblique.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Evolventa';
     src: local('Evolventa-Oblique'), local('Evolventa-Oblique'),
-        url('../fonts/bf/Evolventa-Oblique.ttf') format('truetype');
+        url('../fonts/Evolventa-Oblique.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Evolventa';
     src: local('Evolventa-Regular'), local('Evolventa-Regular'),
-        url('../fonts/bf/Evolventa-Regular.ttf') format('truetype');
+        url('../fonts/Evolventa-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 
-@font-face {
-    font-family: 'Hero-Light';
-    src: local('Hero-Light'), local('Hero-Light'),
-        url('../fonts/bf/Hero-Light.otf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'PoiretOne-Regular';
-    src: local('PoiretOne-Regular'), local('PoiretOne-Regular'),
-        url('../fonts/bf/PoiretOne-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Intro';
-    src: local('Intro'), local('Intro'),
-        url('../fonts/bf/Intro.otf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Intro';
-    src: local('Intro-inline'), local('Intro-inline'),
-        url('../fonts/bf/Intro-Inline.otf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}

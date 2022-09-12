@@ -1,28 +1,36 @@
-// var acc = document.getElementsByClassName("accordion");
-// var i;
 
-// for (i = 0; i < acc.length; i++) {
-//     acc[i].addEventListener("click", function() {
-//         /* Toggle between adding and removing the "active" class,
-//         to highlight the button that controls the panel */
-//         this.classList.toggle("active");
-
-//         /* Toggle between hiding and showing the active panel */
-//         var panel = this.nextElementSibling;
-//         if (panel.style.display === "block") {
-//             panel.style.display = "none";
-//         } else {
-//             panel.style.display = "block";
-//         }
-//     });
-// }
 
 var acc = document.getElementsByClassName("accordeon");
 var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+ acc[0].addEventListener("click", function () {
+    const plus = this.getElementsByClassName("plus_symbol");
+    plus[0].classList.toggle("active_symbol");
+    const minus = this.getElementsByClassName("minus_symbol");
+   minus[0].classList.toggle("active_symbol");
+   
+
+   this.classList.toggle("active_price"); 
+   
+   var panelFirst = this.nextElementSibling;
+
+   console.log(panelFirst)
+   if (panelFirst.style.maxHeight !== "0px") {
+     panelFirst.style.maxHeight ="0px";
+    
+    } else {
+       panelFirst.style.maxHeight = panelFirst.scrollHeight + "px";
+   }
+   
+ });
+  
+for (i = 1; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    const plus = this.getElementsByClassName("plus_symbol");
+    plus[0].classList.toggle("active_symbol");
+    const minus = this.getElementsByClassName("minus_symbol");
+    minus[0].classList.toggle("active_symbol");
+    this.classList.toggle("active_price"); 
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;

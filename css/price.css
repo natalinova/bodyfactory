@@ -1,49 +1,119 @@
+
+ /* загальний блок */
 .price_menu{
-    margin-top: 200px;
-    margin-left: var(--margin-left);
-    border-radius: 5px;
+    margin-top: 100px;
+    max-width: var(--width-basic);
+    border-radius: 2px;
 
 }
 /*стилі для меню */
 .accordeon {
     background-color: var(--light-first);
-    color: var(--dark-second);
+    padding: 0;
+    margin-top: 20px;
+    color: var(--light-second);
     cursor: pointer;
-    padding: 18px;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
+    border-radius: 2px;
     transition: 0.4s;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
 .accordeon:hover {
-    background-color: var(--dark-first);
+    background-color: var(--light-second);
     color: var(--light-second);
 }
 
-/* Style the accordion panel. Note: hidden by default */
-
+.active_price .price_title_text {
+    display: none;
+    color: var(--light-second);
+}
+.active_price .price_title_text--first {
+    display: block;
+}
 .panel {
+    margin-top: 30px;
     padding: 0 18px;
-    background-color: var(--middle-first);
+    
+    background-color: var(--light-first);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
-.accordeon:after {
-    content: '\02795';
-    /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: var(--dark-second);
-    float: right;
-    margin-left: 5px;
+.panelFirst {
+    margin-top: 30px;
+    padding: 0 18px;
+
+    background-color: var(--light-first);
+
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
-.active:after {
-    content: "\2796";
-    color: var(--dark-second);
-    /* Unicode character for "minus" sign (-) */
+.price_title {
+    display: flex;
+    padding-left: 20px;
+    font-size: 22px;
+    margin: auto 0;
+    width: 30%;
+text-align:start;
+    
+    color: var(--dark-first);
+
+}
+
+.price_hero_img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+
+    height: 300px;
+}
+
+.price_title_text{
+    font-size: 12px;
+    width: 60%;
+    color: var(--dark-first);
+}
+
+.price_title_text--first{
+        display: none;
+        font-size: 12px;
+        width: 60%;
+        color: var(--dark-first);
+    }
+.price_block_title{
+    text-align: center;
+        height: 50px;
+        margin-bottom: 25px;
+        color: var(--dark-first);
+}
+.price_item{
+    height: 60px;
+    border-bottom: 0.3px black solid;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.price_item:hover, .price_item:focus{
+    border-bottom: 0px;
+}
+.plus_symbol, .minus_symbol {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+}
+.active_symbol{
+    display: none;
+}
+.table_title--price{
+    height: 45px;
+    color: var(--dark-first);
+        line-height: var(--line-height-text);
+        vertical-align: top;
+        font-size: 18px;
+        height: 40px;
 }
