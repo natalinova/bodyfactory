@@ -38,7 +38,7 @@
     padding: 0 18px;
     
     background-color: var(--light-first);
-    max-height: 0;
+    max-height: 100%;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
@@ -116,4 +116,15 @@ text-align:start;
         vertical-align: top;
         font-size: 18px;
         height: 40px;
+}
+.price_add{
+    max-width: var(--width-basic);
+    padding: 0 20px;
+    margin: 50px  auto
+}
+.price_add_text{
+    line-height: var(--line-height-text);
+    padding-bottom: 20px;
+    font-size: 14px;
+    border-bottom: 0.3px black solid;
 }

@@ -32,8 +32,8 @@ for (i = 1; i < acc.length; i++) {
     minus[0].classList.toggle("active_symbol");
     this.classList.toggle("active_price"); 
     var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
+    if (panel.style.maxHeight !== "0px"){
+      panel.style.maxHeight = "0px";
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
     }
